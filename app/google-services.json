@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "246255699940",
+    "firebase_url": "https://preuniprep-master.firebaseio.com",
+    "project_id": "preuniprep-master",
+    "storage_bucket": "preuniprep-master.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246255699940:android:4f3982996ea89b4f",
+        "android_client_info": {
+          "package_name": "com.example.harpreet.vasdapunjab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246255699940-3erqsbnl47271hdii915n7ubt6bnam6a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.harpreet.vasdapunjab",
+            "certificate_hash": "8f453e114e3d03e3fb25195c029332826dbdcdda"
+          }
+        },
+        {
+          "client_id": "246255699940-e873hq51jg2po9m9l6hv6f0tgsgf3s1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzOHdFwjDAZi5U0uVhdG1oKJi0YSp8yzs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246255699940-e873hq51jg2po9m9l6hv6f0tgsgf3s1o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

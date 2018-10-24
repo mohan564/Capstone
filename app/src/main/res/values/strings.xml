@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Capstone Project</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string-array name="TopicsOrSubjects">
+        <item>C Programming</item>
+        <item>C++ Programming</item>
+        <item>Apptitude</item>
+        <item>Reasoning</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
