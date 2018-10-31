@@ -3,10 +3,42 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NEW"
-        android:textSize="50sp"
-        android:textColor="#000"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:id="@+id/image_1"
+        android:layout_weight="3.5"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.5"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:textColor="#000"
+            android:text="Text Title"
+            android:textAlignment="center"
+            android:id="@+id/title_1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:id="@+id/details_1"
+            android:text="Detail goes Here"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
 </LinearLayout>

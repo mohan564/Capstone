@@ -14,6 +14,7 @@ public class Feedback extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.feedback,container,false);
 
+
         return view;
     }
 }

@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -38,6 +39,8 @@ public class First_Screen extends AppCompatActivity {
 
     //saare varibale initialize karn layi method
     private void initialize() {
+
+        FirebaseApp.initializeApp(this);
         Auth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(this);
 

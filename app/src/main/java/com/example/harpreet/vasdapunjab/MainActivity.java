@@ -20,10 +20,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     Layout layout;
     Fragment fragment;
     FirebaseAuth auth;
+    TextView name_navigation;
     FirebaseUser firebaseUser;
     String Uemail;
     Button resend_mail;
@@ -48,9 +51,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.navigation_drawer);
 
-        //email da naam fetch
-//        Uemail = getIntent().getExtras().getString("email");
-     //   resend_mail = findViewById(R.id.resend_mail);
+        FirebaseApp.initializeApp(this);
+
+        resend_mail = findViewById(R.id.resend_mail);
+
+        auth = FirebaseAuth.getInstance();
+        firebaseUser = auth.getCurrentUser();
+
+        //email da naam fetch karna
+        //name_navigation = findViewById(R.id.name_navigation);
+        Uemail = firebaseUser.getEmail().toString();
+        //name_navigation.setText(Uemail);
 
 
         //tool bar di coding
@@ -183,8 +194,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     //Verification mail send karn layi method
     public void verify(View view)
     {
-        auth = FirebaseAuth.getInstance();
-        firebaseUser = auth.getCurrentUser();
+
 
 
         firebaseUser.sendEmailVerification().addOnCompleteListener(MainActivity.this, new OnCompleteListener<Void>() {
