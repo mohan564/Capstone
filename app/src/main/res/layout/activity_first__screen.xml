@@ -4,18 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     android:orientation="vertical"
     tools:context=".First_Screen">
 
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Pre University Guide "
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+
+        android:textColor="#fff"
+        android:text="Success Nothing Less "
+        android:layout_gravity="center"/>
+
     <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:id="@+id/inputName"
-        android:layout_marginTop="100dp"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textColorHint="#fff"
         android:layout_height="wrap_content">
         <EditText
             android:drawableLeft="@drawable/ic_person_black_24dp"
             android:textSize="17sp"
-            android:layout_width="200dp"
+            android:textColor="#fff"
+            android:backgroundTint="#fff"
+            android:layout_width="260dp"
             android:hint="User Name"
             android:maxLines="1"
             android:inputType="text"
@@ -25,15 +51,20 @@
 
     </android.support.design.widget.TextInputLayout>
     <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:id="@+id/inputPassword"
+        android:layout_gravity="center"
         android:layout_marginTop="10dp"
+        android:textColorHint="#fff"
+
         android:layout_height="wrap_content">
         <EditText
             android:drawableLeft="@drawable/ic_lock_black_24dp"
             android:textSize="17sp"
             android:layout_gravity="center"
-            android:layout_width="200dp"
+            android:backgroundTint="#fff"
+            android:textColor="#fff"
+            android:layout_width="260dp"
             android:hint="Password"
             android:inputType="textPassword"
             android:maxLines="1"
@@ -43,40 +74,66 @@
     </android.support.design.widget.TextInputLayout>
 
 
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="Forgot your Password ?"
+            android:onClick="forgotPasswordMethod"
+            android:textColor="#fff"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+
+
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
         android:text="Sign In"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:id="@+id/sign_in"
         android:onClick="signInMethod"
-        android:background="@color/colorPrimary"
-        android:textColor="#fff"
+        android:background="#fff"
+
+        android:textColor="@color/colorPrimary"
         android:layout_gravity="center"/>
 
 
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+         android:layout_height="30dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Click Here to Join Us..."
-        android:textSize="25dp"
-        android:onClick="signUpMethod"
-        android:id="@+id/sign_up"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_gravity="center"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:textSize="15dp"
+             android:text="Not a member yet? "
+             android:textColor="#fff" />
 
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Sign Up"
+             android:textSize="15dp"
+             android:textColor="#fff"
+             android:textStyle="bold"
+             android:onClick="signUpMethod"
+             android:id="@+id/sign_up"
+             android:layout_gravity="center"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:text="Forgot your Password ?"
-        android:onClick="forgotPasswordMethod"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_gravity="center"/>
+     </LinearLayout>
+
 
 </LinearLayout>

@@ -9,6 +9,9 @@ import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -33,6 +36,10 @@ public class First_Screen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_first__screen);
         initialize();
     }
@@ -48,7 +55,7 @@ public class First_Screen extends AppCompatActivity {
         inputPassword = findViewById(R.id.inputPassword);
         Uname  = findViewById(R.id.name);
         password = findViewById(R.id.password);
-        sign_up  = findViewById(R.id.sign_up);
+        sign_up  =  findViewById(R.id.sign_up);
         Uname.setText("");
         password.setText("");
     }
