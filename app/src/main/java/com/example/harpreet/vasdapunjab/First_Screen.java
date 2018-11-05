@@ -3,6 +3,7 @@ package com.example.harpreet.vasdapunjab;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputLayout;
@@ -26,12 +27,13 @@ public class First_Screen extends AppCompatActivity {
 
     TextInputLayout inputName, inputPassword;
     EditText Uname, password;
-    TextView sign_up;
+    TextView sign_up, titleApp;
     Intent intent;
     ProgressDialog progressDialog;
     FirebaseAuth Auth;
     Boolean islogin = false;
     SharedPreferences sharedPreferences;
+    Typeface myFonts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,11 @@ public class First_Screen extends AppCompatActivity {
 
         setContentView(R.layout.activity_first__screen);
         initialize();
+
+        titleApp = (TextView)findViewById(R.id.pugTitle);
+        myFonts = Typeface.createFromAsset(this.getAssets(),"fonts/gymnastik DEMO.otf");
+        titleApp.setTypeface(myFonts);
+
     }
 
     //saare varibale initialize karn layi method
