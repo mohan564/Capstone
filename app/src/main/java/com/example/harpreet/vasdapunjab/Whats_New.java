@@ -29,7 +29,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class Whats_New extends Fragment {
-    
+
     FirebaseStorage storage;
     StorageReference reference;
     ImageView image_1,image_2,image_3,image_4,image_5;

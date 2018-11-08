@@ -24,7 +24,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="12dp"
-
         android:textColor="#fff"
         android:text="Success Nothing Less "
         android:layout_gravity="center"/>
@@ -32,7 +31,6 @@
     <android.support.design.widget.TextInputLayout
         android:layout_width="wrap_content"
         android:id="@+id/inputName"
-
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:textColorHint="#fff"
@@ -57,7 +55,6 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:textColorHint="#fff"
-
         android:layout_height="wrap_content">
         <EditText
             android:drawableLeft="@drawable/ic_lock_black_24dp"
