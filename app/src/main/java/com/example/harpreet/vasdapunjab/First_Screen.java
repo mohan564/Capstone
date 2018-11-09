@@ -70,10 +70,28 @@ public class First_Screen extends AppCompatActivity {
 
 
     public void signInMethod(View view) {
-        if (Uname.getText().toString().length() == 0 || password.getText().toString().length() == 0) {
-            Toast.makeText(this, "Enter Email or Password", Toast.LENGTH_SHORT).show();
-        } else {
-
+        boolean flag = true;
+        if (Uname.getText().toString().isEmpty())
+        {
+            inputName.setError("Please Enter Email");
+            flag = false;
+        }
+        else
+        {
+            inputName.setErrorEnabled(false);
+        }
+        if(password.getText().toString().isEmpty())
+        {
+            inputPassword.setError("Please Enter Password");
+            flag = false;
+        }
+        else
+        {
+            inputPassword.setErrorEnabled(false);
+        }
+        if(flag){
+            inputName.setErrorEnabled(false);
+            inputPassword.setErrorEnabled(false);
             final String email = Uname.getText().toString().trim();
             String pasword = password.getText().toString().trim();
 
@@ -110,7 +128,6 @@ public class First_Screen extends AppCompatActivity {
 
         if (sign_up.getId()==view.getId())
         {
-
             intent = new Intent(this,Sign_Up_Activity.class);
             startActivity(intent);
             Uname.setText("");
@@ -140,7 +157,5 @@ public class First_Screen extends AppCompatActivity {
 
         }
     }
-    
-
 
 }

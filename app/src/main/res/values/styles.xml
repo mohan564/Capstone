@@ -7,10 +7,22 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="textColorError">#fff</item>
     </style>
 
     
     <style name="BottomNavigatioTheme" parent="Widget.Design.BottomNavigationView" >
         <item name="colorPrimary">#ffffff </item>
     </style>
+
+    <style name="signUpStyle" parent="@style/TextAppearance.AppCompat">
+
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+
+    </style>
+    
+
+    
+    
 </resources>

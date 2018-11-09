@@ -55,6 +55,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:textColorHint="#fff"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#fff"
         android:layout_height="wrap_content">
         <EditText
             android:drawableLeft="@drawable/ic_lock_black_24dp"
@@ -100,7 +102,6 @@
         android:id="@+id/sign_in"
         android:onClick="signInMethod"
         android:background="#fff"
-
         android:textColor="@color/colorPrimary"
         android:layout_gravity="center"/>
 

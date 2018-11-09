@@ -52,6 +52,8 @@
                 android:layout_width="wrap_content"
                 android:id="@+id/layoutname"
                 android:layout_marginTop="20dp"
+                app:hintTextAppearance="@style/signUpStyle"
+                app:errorTextAppearance="@style/signUpStyle"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content">
                 <EditText
@@ -75,6 +77,8 @@
                 android:id="@+id/layoutEmail"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
+                app:hintTextAppearance="@style/signUpStyle"
+                app:errorTextAppearance="@style/signUpStyle"
                 android:backgroundTint="@color/colorPrimary"
                 android:layout_height="wrap_content">
 
@@ -95,6 +99,9 @@
                 android:layout_width="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
+                android:id="@+id/layoutPassword"
+                app:errorTextAppearance="@style/signUpStyle"
+                app:hintTextAppearance="@style/signUpStyle"
                 android:layout_height="wrap_content">
 
                 <EditText
@@ -113,9 +120,11 @@
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="wrap_content"
-                android:id="@+id/layoutPassword"
+                android:id="@+id/layoutConfirmPassword"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
+                app:hintTextAppearance="@style/signUpStyle"
+                app:errorTextAppearance="@style/signUpStyle"
                 android:layout_height="wrap_content">
 
                 <EditText
