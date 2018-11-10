@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -27,11 +28,18 @@ import com.google.firebase.storage.StorageReference;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Whats_New extends Fragment {
 
     FirebaseStorage storage;
+    FirebaseDatabase database;
+    DatabaseReference databaseReference;
     StorageReference reference;
+    ArrayList<String> titles = new ArrayList<>();
+    ArrayList<String> details = new ArrayList<>();
+    ArrayList<String> titlekeys = new ArrayList<>();
+    ArrayList<String> detailkeys = new ArrayList<>();
     ImageView image_1,image_2,image_3,image_4,image_5;
     TextView title_1,title_2,title_3,title_4,title_5;
     TextView detail_1,detail_2,detail_3,detail_4,detail_5;
@@ -43,11 +51,213 @@ public class Whats_New extends Fragment {
 
         initializeValues(view);
 
+        updateTitles();
+
+        updateDetails();
+
         updateImages();
 
         return view;
     }
 
+    private void updateDetails() {
+
+
+        database = FirebaseDatabase.getInstance();
+        databaseReference = database.getReference().child("Details");
+
+        databaseReference.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+                String value = dataSnapshot.getValue(String.class);
+
+                String key = dataSnapshot.getKey();
+
+                detailkeys.add(key);
+
+                details.add(value);
+
+                if(details.indexOf(value)==0)
+                {
+                    detail_1.setText(value);
+                }
+                if(details.indexOf(value)==1)
+                {
+                    detail_2.setText(value);
+                }
+                if(details.indexOf(value)==2)
+                {
+                    detail_3.setText(value);
+                }
+                if(details.indexOf(value)==3)
+                {
+                    detail_4.setText(value);
+                }
+                if(details.indexOf(value)==4)
+                {
+                    detail_5.setText(value);
+                }
+
+
+            }
+
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+                String value = dataSnapshot.getValue(String.class);
+
+                String key = dataSnapshot.getKey();
+
+                int index = detailkeys.indexOf(key);
+
+                details.set(index,value);
+
+                if(details.indexOf(value)==0)
+                {
+                    detail_1.setText(value);
+                }
+                if(details.indexOf(value)==1)
+                {
+                    detail_2.setText(value);
+                }
+                if(details.indexOf(value)==2)
+                {
+                    detail_3.setText(value);
+                }
+                if(details.indexOf(value)==3)
+                {
+                    detail_4.setText(value);
+                }
+                if(details.indexOf(value)==4)
+                {
+                    detail_5.setText(value);
+                }
+
+
+
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                Toast.makeText(getActivity(), "Check Your Internet Connection", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+
+    }
+
+    private void updateTitles() {
+
+            database = FirebaseDatabase.getInstance();
+            databaseReference = database.getReference().child("Titles");
+
+
+            databaseReference.addChildEventListener(new ChildEventListener() {
+                @Override
+                public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+                    String value = dataSnapshot.getValue(String.class);
+
+                    titles.add(value);
+
+                    String key = dataSnapshot.getKey();
+
+                    titlekeys.add(key);
+
+                    if(titles.indexOf(value)==0)
+                    {
+                        title_1.setText(value);
+                    }
+                    if(titles.indexOf(value)==1)
+                    {
+                        title_2.setText(value);
+                    }
+                    if(titles.indexOf(value)==2)
+                    {
+                        title_3.setText(value);
+                    }
+                    if(titles.indexOf(value)==3)
+                    {
+                        title_4.setText(value);
+                    }
+                    if(titles.indexOf(value)==4)
+                    {
+                        title_5.setText(value);
+                    }
+
+                }
+
+                @Override
+                public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+                    String value = dataSnapshot.getValue(String.class);
+
+                    String key = dataSnapshot.getKey();
+
+                    int index = titlekeys.indexOf(key);
+
+                    titles.set(index,value);
+
+                    if(titles.indexOf(value)==0)
+                    {
+                        title_1.setText(value);
+                    }
+                    if(titles.indexOf(value)==1)
+                    {
+                        title_2.setText(value);
+                    }
+                    if(titles.indexOf(value)==2)
+                    {
+                        title_3.setText(value);
+                    }
+                    if(titles.indexOf(value)==3)
+                    {
+                        title_4.setText(value);
+                    }
+                    if(titles.indexOf(value)==4)
+                    {
+                        title_5.setText(value);
+                    }
+
+
+
+                }
+
+
+                @Override
+                public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+
+                }
+
+                @Override
+                public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    Toast.makeText(getActivity(), "Check Your Internet Connection", Toast.LENGTH_SHORT).show();
+                }
+            });
+
+
+
+
+    }
 
 
     private void initializeValues(View view) {
