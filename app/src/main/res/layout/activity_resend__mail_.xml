@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Resend_Mail_Activity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verify"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:textStyle="italic|bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20sp"
+        android:id="@+id/resend_mail"
+        android:onClick="verify"
+        android:text="Resend Mail"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:background="@color/colorPrimaryDark"
+        android:text="LogOut"
+        android:id="@+id/logout"
+        android:textColor="#fff"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:onClick="logout"/>
+
+</LinearLayout>

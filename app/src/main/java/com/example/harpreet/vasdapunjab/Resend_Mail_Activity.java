@@ -42,7 +42,7 @@ public class Resend_Mail_Activity extends AppCompatActivity {
         }
         else
         {
-            textView.setText("Welcome to our App"+Uemail);
+            textView.setText("Welcome to our App "+Uemail);
             logout.setVisibility(View.INVISIBLE);
             resend_mail.setVisibility(View.INVISIBLE);
             new Handler().postDelayed(new Runnable() {
