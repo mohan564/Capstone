@@ -191,26 +191,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         startActivity(intent);
     }
 
-    //Verification mail send karn layi method
-    public void verify(View view)
-    {
-
-
-
-        firebaseUser.sendEmailVerification().addOnCompleteListener(MainActivity.this, new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                if(task.isSuccessful())
-                {
-                    Toast.makeText(MainActivity.this, "Verification Email Sent To "+Uemail, Toast.LENGTH_SHORT).show();
-                }
-                else
-                {
-                    Toast.makeText(MainActivity.this, "Email Sending Failed", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-    }
 
     //Logout te click karn to baad method
     public void logOutMethod()

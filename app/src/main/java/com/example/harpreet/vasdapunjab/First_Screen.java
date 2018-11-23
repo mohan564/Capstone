@@ -22,6 +22,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class First_Screen extends AppCompatActivity {
 
@@ -31,6 +32,7 @@ public class First_Screen extends AppCompatActivity {
     Intent intent;
     ProgressDialog progressDialog;
     FirebaseAuth Auth;
+    FirebaseUser firebaseUser;
     Boolean islogin = false;
     SharedPreferences sharedPreferences;
     Typeface myFonts;
@@ -57,7 +59,6 @@ public class First_Screen extends AppCompatActivity {
         FirebaseApp.initializeApp(this);
         Auth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(this);
-
         inputName = findViewById(R.id.inputName);
         inputPassword = findViewById(R.id.inputPassword);
         Uname  = findViewById(R.id.name);
@@ -105,13 +106,13 @@ public class First_Screen extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         Toast.makeText(First_Screen.this, "Success", Toast.LENGTH_SHORT).show();
                         progressDialog.dismiss();
-                        Intent intent = new Intent(First_Screen.this, MainActivity.class);
-                        intent.putExtra("email", email);
+                        Intent intent = new Intent(First_Screen.this, Resend_Mail_Activity.class);
                         startActivity(intent);
+                        finish();
                         islogin = true;
                         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(First_Screen.this);
                         sharedPreferences.edit().putBoolean("Islogin",islogin).commit();
-                        finish();
+
 
                     } else {
                         progressDialog.dismiss();

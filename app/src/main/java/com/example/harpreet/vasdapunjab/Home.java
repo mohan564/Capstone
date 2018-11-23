@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FileDownloadTask;
@@ -288,6 +289,10 @@ public class Home extends Fragment  {
         image_home_3 = view.findViewById(R.id.image_home_3);
         image_home_4 = view.findViewById(R.id.image_home_4);
         image_home_5 = view.findViewById(R.id.image_home_5);
+
+
+       // Glide.with(getActivity()).load(R.raw.loading).into(image_home_1);
+
 
 
     }

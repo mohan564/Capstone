@@ -35,7 +35,7 @@ public class Splash_Screen_Activity extends AppCompatActivity {
             public void run() {
 
                 if(islogin) {
-                    Intent intent = new Intent(Splash_Screen_Activity.this, MainActivity.class);
+                    Intent intent = new Intent(Splash_Screen_Activity.this, Resend_Mail_Activity.class);
                     startActivity(intent);
                 }
                 else
