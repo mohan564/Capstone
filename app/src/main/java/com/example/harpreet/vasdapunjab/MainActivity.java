@@ -18,6 +18,8 @@ import android.support.v7.widget.Toolbar;
 import android.text.Layout;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
@@ -50,14 +52,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.navigation_drawer);
-
         FirebaseApp.initializeApp(this);
-
         resend_mail = findViewById(R.id.resend_mail);
-
         auth = FirebaseAuth.getInstance();
         firebaseUser = auth.getCurrentUser();
-
         //email da naam fetch karna
         //name_navigation = findViewById(R.id.name_navigation);
         Uemail = firebaseUser.getEmail().toString();
@@ -93,8 +91,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 if(id==R.id.mcq)
                 {
 
-                    Intent intent = new Intent(MainActivity.this,quiz_activity.class);
-                    startActivity(intent);
+                    fragment =new Quiz();
                 }
                 else if(id==R.id.ayp)
                 {
