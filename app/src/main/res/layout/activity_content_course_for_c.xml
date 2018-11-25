@@ -35,6 +35,14 @@
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></android.support.v4.widget.NestedScrollView>
+        android:layout_height="match_parent">
+
+        <ExpandableListView
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:id="@+id/C_Expandable"
+            android:layout_height="match_parent">
+        </ExpandableListView>
+    </android.support.v4.widget.NestedScrollView>
 
 </android.support.design.widget.CoordinatorLayout>
