@@ -11,4 +11,567 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="Introducation1">C is a general-purpose, procedural,
+        imperative computer programming language developed in 1972 by Dennis M. Ritchie
+        at the Bell Telephone Laboratories to develop the UNIX operating system. C is the most widely used computer language.
+        It keeps fluctuating at number one scale of popularity along with Java programming language,
+        which is also equally popular and most widely used among modern software programmers.\n\n
+        The UNIX operating system, the C compiler, and essentially all UNIX application programs have been written in C.
+        C has now become a widely used professional language for various reasons −\n\n
+        1.Easy to learn \n
+        2.Structured language\n
+        3.It produces efficient programs\n
+        4.It can be compiled on a variety of computer platforms \n
+        5.It can handle low-level activities</string>
+
+    <string name="Topic">A C program consists of various tokens and a token is either a keyword, an identifier, a constant, a string literal, or a symbol.
+        For example, the following C statement consists of five tokens −\n
+        <b>printf("Hello, World! \n");</b>\n\n
+
+        <b>Tokens in C</b>\n\n
+        <b>1. Semicolons</b>\n
+        In a C program, the semicolon is a statement terminator.
+        That is, each individual statement must be ended with a semicolon. It indicates the end of one logical entity.\n\n
+        e.gprintf("Hello, World! \n")<b>;</b>\n\n
+        return 0;
+
+
+        <b>2.Comments</b>\n
+        Comments are like helping text in your C program and they are ignored by the compiler.
+        They start with /* and terminate with the characters */ as shown below −
+        e.g /* my first program in C */ \n\n
+
+
+        <b>3. Identifiers</b>\n
+        A C identifier is a name used to identify a variable, function, or any other user-defined item. An identifier starts
+        with a letter A to Z, a to z, or an underscore followed by zero or more letters, underscores, and digits (0 to 9).\n\n
+        <b>4.Keywords</b>\n
+        The following list shows the reserved words in C.
+        These reserved words may not be used as constants or variables or any other identifier names.\n
+        <b>Some common used keywords are: </b>
+         <b>1.</b>auto\n
+        <b>2.</b>else\n
+        <b>3.</b>if\n
+        <b>4.</b>for\n
+         <b>1.</b>switch\n
+        <b>2.</b>float\n
+        <b>3.</b>void\n
+        <b>4.</b>int and many more\n
+
+
+
+    </string>
+    <string name="introduction1">C++ is a middle-level programming language developed by Bjarne Stroustrup starting in 1979
+        at Bell Labs. C++ runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX.
+        This tutorial adopts a simple and practical approach to describe the concepts of C++.\n
+
+
+    C++ is a middle-level programming language developed by Bjarne Stroustrup starting in 1979 at Bell Labs.
+        C++ runs on a variety of platforms, such as Windows, Mac OS,
+        and the various versions of UNIX. This tutorial adopts a simple and practical approach to describe the concepts of C++.\n\n
+        C++ fully supports object-oriented programming, including the four pillars of object-oriented development − \n\n
+        <b>1.</b>Encapsulation\n
+        <b>2.</b>Data hiding\n
+        <b>3.</b>Inheritance\n
+        <b>4.</b>Polymorphism\n
+
+
+
+
+    </string>
+    <string name="why_to_use_cpp"><b>1.</b>C++ is used by hundreds of thousands of programmers in essentially every application domain.\n
+    <b>2.</b>C++ is being highly used to write device drivers and other software that rely on direct manipulation of hardware under realtime constraints.\n
+        <b>3.</b>C++ is widely used for teaching and research because it is clean enough for successful teaching of basic concepts.\n
+        <b>4.</b>Anyone who has used either an Apple Macintosh or a PC running Windows has indirectly used C++ because the primary user interfaces of these systems are written in C++.
+
+
+    </string>
+    <string name="Why_to_use_c11">C was initially used for system development work, particularly the programs that make-up the operating system. C was adopted as a system development language because
+        it produces code that runs nearly as fast as the code written in assembly language. Some examples of the use
+        of C might be − \n\n
+        <b>1.</b>Operating Systems\n
+        <b>2.</b>Language Compilers\n
+        <b>3.</b>Assemblers\n
+        <b>4.</b>Language Interpreters\n
+        <b>5.</b>Utilities\n
+        <b>6.</b>Databases\n\n
+</string>
+    <string name="data_type_c">The following table provides the details of standard
+        integer types with their storage sizes and value ranges −\n
+        <b>1.</b>char\n
+                <b>Storage Size</b> 1 byte
+                <b>Range</b>-128 to 127 or 0 to 255
+         <b>2.Singned Char</b>char\n
+                <b>Storage Size</b> 1 byte
+                <b>Range</b>-128 to 127
+
+        <b>3.Singned Char</b> \n
+                <b>Storage Size</b> 1 byte
+                <b>Range</b> 0 to 255
+         <b>4.int</b>\n
+                <b>Storage Size</b> 2 or 4 bytes
+                <b>Range</b>-32,768 to 32,767 or -2,147,483,648 to 2,147,483,647
+         <b>5.unsigned int</b>\n
+                <b>Storage Size</b> 2 or 4 bytes
+                <b>Range</b>0 to 65,535 or 0 to 4,294,967,295
+        <b>1.</b>short\n
+                <b>Storage Size</b>2 bytes
+                <b>Range</b>-32,768 to 32,767
+         <b>1.</b>Long\n
+                <b>Storage Size</b> 4 bytes
+                <b>Range</b>-2,147,483,648 to 2,147,483,647\n\n
+
+
+
+    </string>
+    <string name="variables_c">A variable is nothing but a name given to a storage area that our programs can manipulate.
+        Each variable in C has a specific type, which determines the size and layout of the variable memory;
+        the range of values that can be stored within that memory; and the set of operations
+        that can be applied to the variable.\n
+        There will be the following basic variable types −\n
+         <b>1.</b>void\n
+        <b>2.</b>float\n
+        <b>3.</b>char\n
+        <b>4.</b>double\n
+        <b>5.</b>int\n
+        <b>Variable Definition in C</b>\n
+        A variable definition tells the compiler where and how much storage to create for the variable.
+        A variable definition specifies a data type and contains a list of one or more variables of that type as follows −\n
+        int    i, j, k;\n
+        char   c, ch;\n
+        float  f, salary;\n
+        double d;\n\n
+
+    </string>
+    <string name="Opterators_c">An operator is a symbol that tells the compiler to perform specific mathematical or logical functions.
+        C language is rich in built-in operators and provides the following types of operators − \n\n
+         <b>1.Arithmetic Operators</b>\n
+                <b>a.</b>Adds two operands.(A + B = 30)\n
+                 <b>b.</b>Subtracts second operand from the first..(A - B = 30)\n
+                <b>c.</b>Multiplies both operands.(A * B = 30)\n
+                 <b>d.</b>Increment operator increases the integer value by one.(A++ = 30)\n
+        <b>3.Relational Operators</b>\n
+                 <b>a.</b> ==  (A + B = 30)\n
+                 <b>b.</b> !=  (A != B) is true..\n
+                 <b>c.</b> >  (A > B) is not true.\n
+                 <b>d.</b> >=  (A >= B) is not true.\n
+
+
+
+        <b>4.Logical Operators</b>  \n
+                 <b>a. || </b> ||  Called Logical OR Operator. If any of the two operands is non-zero, then the condition becomes true.\n
+                 <b>b. !</b> ! Called Logical NOT Operator. It is used to reverse the logical state of
+                                its operand. If a condition is true, then Logical NOT operator will make it false.\n
+                 <b>c. </b> >  Called Logical AND operator. If both the operands are non-zero, then the condition becomes true.\n
+
+
+
+        <b>5. Bitwise Operators</b> \n
+        Bitwise operator works on bits and perform bit-by-bit operation. The truth tables for  |, and ^ .
+
+
+        <b>5. Assignmet Operators</b> \n
+
+
+
+
+    </string>
+        To use a function, you will have to call that function to perform the defined task.\n
+    <string name="Functions">A function is a group of statements that together perform a task. Every C program has at least one function,
+        which is main(), and all the most trivial programs can define additional functions.\n
+        A function declaration tells the compiler about a function name, return type, and parameters.
+        A function definition provides the actual body of the function.
+        <b>Defining a Function</b>
+        return_type function_name( parameter list ) \n
+        {
+            body of the function
+        }\n
+
+        <b>Function Declarations
+        </b>
+        A function declaration tells the compiler about a
+        function name and how to call the function. The actual body of the function can be defined separately.\n
+        <b>Calling a Function</b>
+        While creating a C function, you give a definition of what the function has to do.
+        When a program calls a function, the program control is transferred to the called function.
+        A called function performs a defined task and when its return statement
+        is executed or when its function-ending closing brace is reached, it returns the program control back to the main program.
+
+    </string>
+    <string name="arrays_c">Arrays a kind of data structure that can store a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data,
+        but it is often more useful to think of an array as a collection of variables of the same type.\n
+        <b>Declaring Arrays</b>
+        To declare an array in C, a programmer specifies the type of the elements and the number of elements required by an array as follows \n
+        type arrayName [ arraySize ];\n
+        <b>Initializing Arrays</b>
+        double balance[] = {1000.0, 2.0, 3.4, 7.0, 50.0};\n
+        <b>Accessing Array Elements</b>\n
+        double salary = balance[9];\n
+        The above statement will take the 10th element from the array and assign the value to salary variable.
+
+    </string>
+    <string name="Ponters_c">Pointers in C are easy and fun to learn. Some C programming tasks are performed more easily with pointers, and other tasks, such as dynamic memory allocation,
+        cannot be performed without using pointers.
+        So it becomes necessary to learn pointers to become a perfect C programmer. Let start learning them in simple and easy steps.\n
+            <b>What are Pointers?</b>
+        A pointer is a variable whose value is the address of another variable, i.e., direct address of the memory location.
+        Like any variable or constant, you must
+        declare a pointer before using it to store any variable address. The general form of a pointer variable declaration is −\n
+        type *var-name;\n
+        Here, type is the pointers base type; it must be a valid C data type and var-name is the name of the pointer variable. The asterisk * used to declare a pointer is the same asterisk used for multiplication.
+        However, in this statement the asterisk is being used to designate a variable as a pointer.
+    </string>
+    <string name="loops_c">You may encounter situations, when a block of code needs to be executed several number of times. In general, statements are executed sequentially:
+        The first statement in a function is executed first followed by the second and so on.\n
+    Programming languages provide various control structures that allow for more complicated execution paths.\n
+    A loop statement allows us to execute a statement or group of statements multiple times. Given below is the general form of a loop statement
+        in most of the programming languages − \n
+    <b>Loop Type and Description </b>\n\n
+        <b>1. WHILE LOOP:</b>Repeats a statement or group of statements while a given condition is true.
+        It tests the condition before executing the loop body.\n
+        <b>2.FOR LOOP: </b>Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.\n
+        <b>3.do while :</b>It is more like a while statement, except that it tests the condition at the end of the loop body.\n
+        <b>4.nested loop:</b>You can use one or more loops inside any other while, for, or do..while loop.\n
+
+        <b>The Infinite Loop</b>\n
+        A loop becomes an infinite loop if a condition never becomes false. The for loop is traditionally used for this purpose. Since none of the three expressions
+        that form the for loop are required, you can make an endless loop by leaving the conditional expression empty.
+    </string>
+    <string name="strucure_union"><b>Structure</b>\n
+    Arrays allow to define type of variables that can hold several data items of the same kind.
+        Similarly structure is another user defined data type available in C that allows to combine data items of different kinds.\n
+        <b>1.Title</b>\n
+         <b>2.Auhor</b>\n
+         <b>3.Subject</b>\n
+         <b>4.Book ID</b>\n\n
+        <b>Defining a Structure</b>
+        To define a structure, you must use the struct statement.
+        The struct statement defines a new data type, with more than one member. The format of the struct statement is as follows −\n
+        struct [structure tag] {\n
+         member definition;\n
+        member definition;\n
+        member definition; }\n\n
+
+
+        <b>Union:</b>\n
+        A union is a special data type available in C that allows to store different data types in the same memory location. You can define a union with many members, but only one member can contain a value at any given time.
+        Unions provide an efficient way of using the same memory location for multiple-purpose.
+        <b>Defining a Union</b>\n
+        To define a union, you must use the union statement in the same way as you did while defining a structure. The union statement defines a new
+        data type with more than one member for your program. The format of the union statement is as follows −\n
+        union [union tag] {\n
+           member definition;\n
+           member definition;\n
+           member definition;\n
+        }\n\n
+
+
+    </string>
+    <string name="File_c">A file represents a sequence of bytes, regardless of it being a text file or a binary file. C programming language provides access on high level functions as well
+        as low level (OS level) calls to handle file on your storage devices.\n
+        <b>Opening Files</b>\n
+        You can use the fopen( ) function to create a new file or to open an existing file. This call will initialize an object of the type FILE, which contains all the information necessary to control the stream. The prototype of this function call is as follows −\n
+        FILE *fopen( const char * filename, const char * mode );\n
+        <b>Closing a File</b>\n
+        To close a file, use the fclose( ) function. The prototype of this function is −\n
+        int fclose( FILE *fp );\n
+        <b>Writing a File</b>\n
+        Following is the simplest function to write individual characters to a stream −\n
+        int fputc( int c, FILE *fp );\n
+        <b>Reading a File</b>\n
+        Given below is the simplest function to read a single character from a file −\n
+int         fgetc( FILE * fp );
+    </string>
+    <string name="Memory_Managemet_c"> Resizing and Releasing Memory \n
+        When your program comes out, operating system automatically release all the memory allocated by your program but as a good
+        practice when you are not in need of memory anymore then you should release that memory by calling the function free().\n
+        Alternatively, you can increase or decrease the size of an allocated memory block by calling the function realloc()..
+        Let us check the above program once again and make use of realloc() and free() functions −\n
+
+    </string>
+    <string name="data_types_cpp"> While writing program in any language, you need to use various variables to store various information. Variables are nothing but reserved memory locations to store values.
+        This means that when you create a variable you reserve some space in memory.\n
+    C++ offers the programmer a rich assortment of built-in as well as user defined data types.\n\n
+
+        <b>1.</b>Boolean(1 Byte)\n
+        <b>2.</b>Character(1 Byte)\n
+        <b>3.</b>int (4 Byte)\n
+        <b>4.</b>Float(4 Byte)\n
+        <b>5.</b>Double(8 Byte)\n
+    </string>
+    <string name="variables_cpp">A variable provides us with named storage that our programs can manipulate. Each variable in C++ has a specific type, which determines the size and layout of the variable memory; the
+        range of values that can be stored within that memory; and the set of operations that can be applied to the variable.\n
+    There are following basic types of variable in C++\n
+        <b>1.</b>bool(1 Byte)\n
+        <b>2.</b>Char(1 Byte)\n
+        <b>3.</b>int (4 Byte)\n
+        <b>4.</b>float(4 Byte)\n
+        <b>5.</b>double(8 Byte)\n
+        <b>6.</b>void \n
+        <b>Variable Definition in C++</b>
+        A variable definition tells the compiler where and how much storage to create for the variable.
+        A variable definition specifies a data type, and contains a list of one or more variables of that type as follows −\n
+
+        type variable_list;
+
+
+    </string>
+    <string name="operators_cpp">An operator is a symbol that tells the compiler to perform specific mathematical or logical functions.
+        Cpp language is rich in built-in operators and provides the following types of operators − \n\n
+         <b>1.Arithmetic Operators</b>\n
+                <b>a.</b>Adds two operands.(A + B = 30)\n
+                 <b>b.</b>Subtracts second operand from the first..(A - B = 30)\n
+                <b>c.</b>Multiplies both operands.(A * B = 30)\n
+                 <b>d.</b>Increment operator increases the integer value by one.(A++ = 30)\n
+        <b>3.Relational Operators</b>\n
+                 <b>a.</b> ==  (A + B = 30)\n
+                 <b>b.</b> !=  (A != B) is true..\n
+                 <b>c.</b> >  (A > B) is not true.\n
+                 <b>d.</b> >=  (A >= B) is not true.\n
+
+
+
+        <b>4.Logical Operators</b>  \n
+                 <b>a. || </b> ||  Called Logical OR Operator. If any of the two operands is non-zero, then the condition becomes true.\n
+                 <b>b. !</b> ! Called Logical NOT Operator. It is used to reverse the logical state of
+                                its operand. If a condition is true, then Logical NOT operator will make it false.\n
+                 <b>c. </b> >  Called Logical AND operator. If both the operands are non-zero, then the condition becomes true.\n
+
+
+
+        <b>5. Bitwise Operators</b> \n
+        Bitwise operator works on bits and perform bit-by-bit operation. The truth tables for  |, and ^ .
+
+
+        <b>5. Assignmet Operators</b> \n
+</string>
+    <string name="Functios_cpp">>A function is a group of statements that together perform a task. Every Cpp program has at least one function,
+        which is main(), and all the most trivial programs can define additional functions.\n
+        A function declaration tells the compiler about a function name, return type, and parameters.
+        A function definition provides the actual body of the function.
+        <b>Defining a Function</b>
+        return_type function_name( parameter list ) \n
+        {
+            body of the function
+        }\n
+
+        <b>Function Declarations
+        </b>
+        A function declaration tells the compiler about a
+        function name and how to call the function. The actual body of the function can be defined separately.\n
+        <b>Calling a Function</b>
+        While creating a C function, you give a definition of what the function has to do.
+        When a program calls a function, the program control is transferred to the called function.
+        A called function performs a defined task and when its return statement
+        is executed or when its function-ending closing brace is reached, it returns the program control back to the main program.
+</string>
+    <string name="Inheritance_cpp">One of the most important concepts in object-oriented programming is that of inheritance.
+        Inheritance allows us to define a class in terms of another class, which makes it easier to create and maintain an application.
+        This also provides an opportunity to reuse the code functionality and fast implementation time.\n
+    When creating a class, instead of writing completely new data members and member functions, the programmer can designate that the new class should inherit the members of an existing class.
+        This existing class is called the base class, and the new class is referred to as the derived class.\n
+        <b>Base and Derived Classes</b>
+        A class can be derived from more than one classes, which means it can inherit data and functions from multiple base classes. To define a derived class, we use a class derivation list to specify the base class(es).
+        A class derivation list names one or more base classes and has the form −\n
+        <b>class derived-class: access-specifier base-class</b>\n
+        <b>Type of Inheritance</b>\n\n
+        <b>1.Multiple Inheritance</b>
+        <b>2.single Inheritance</b>
+        <b>3.Heirarchical Inheritance.</b>
+        <b>4.Hybrid Inheritance.</b>
+
+    </string>
+    <string name="poly_cpp">The word polymorphism means having many forms. Typically, polymorphism occurs when there is a hierarchy of classes and they are related by inheritance.\n
+    C++ polymorphism means that a call to a member function will cause a different function to be executed depending on the type of object that invokes the function.
+
+
+    </string>
+    <string name="Abstraction_cpp">Data abstraction refers to providing only essential information to the outside world and hiding their background details,
+        i.e., to represent the needed information in program without presenting the details.\n
+        n C++, classes provides great level of data abstraction. They provide sufficient public methods to the outside world to play with the functionality
+        of the object and to manipulate object data, i.e., state without actually knowing how class has been implemented internally.\n
+        <b>Benefits of Data Abstraction</b>\n
+        <b>1.</b>Class internals are protected from inadvertent user-level errors, which might corrupt the state of the object.
+        <b>2.The class implementation may evolve over time in response to changing requirements or bug reports without requiring change in user-level code.</b>
+    </string>
+    <string name="Encapsulation_cpp">Encapsulation is an Object Oriented Programming concept that binds together the data and functions that manipulate the data,
+        and that keeps both safe from outside interference and misuse. Data encapsulation led to the important OOP concept of data hiding.\n
+    Data encapsulation is a mechanism of bundling the data, and the functions that use them and data abstraction is
+        a mechanism of exposing only the interfaces and hiding the implementation details from the user.
+
+    </string>
+    <string name="Interfaces_cpp">An interface describes the behavior or capabilities of a C++ class without committing to a particular implementation of that class.\n
+The C++ interfaces are implemented using abstract classes and these abstract classes should not be confused with data abstraction which is a concept of keeping
+        implementation details separate from associated data.A class is made abstract by declaring at least one of its functions as pure virtual function. \n
+
+
+    </string>
+    <string name="files_cpp">This tutorial will teach you how to read and write from a file. This requires another standard C++ library called fstream, which defines three new data types−\n
+        <b>1.ofstream :</b>This data type represents the output file stream and is used to create files and to write information to files.\n
+         <b>2.ifstream :</b>This data type represents the input file stream and is used to read information from files.\n
+        <b>3.fstream :</b>  This data type represents the file stream generally, and has the capabilities of both ofstream and ifstream which means it can create files, write information to files, and read information from files.
+
+
+    </string>
+    <string name="OS_Abbrevation"><b>BIOS::</b>
+        This is the Basic Input Output System which controls the computer,
+        telling it what operations to perform. These instructions are on a chip that connects to the motherboard.\n
+        <b>BYTE ::</b>A byte is a storage unit for data.\n
+        <b>K::</b>is a Kilobyte which is 1024 bytes.\n
+        <b>MB ::</b>is a Megabyte which is a million bytes.\n
+        <b>GB :: </b> is a Gigabyte, which equals 1000 megabytes.\n
+        <b>CPU ::</b>This stands for the Central Processing Unit of the computer. This is like the computers brain.\n
+        <b>MAC :: </b> This is an abbreviation for Macintosh, which is a type of personal computer made by the Apple Computer company.\n
+        <b>OS ::</b>This is the Operating System of the computer. It is the main program that runs on a computer and begins automatically when the computer is turned on.\n
+        <b>Pdf :: </b>This represents the Portable Document Format which displays files in a format that is ready for the web.\n
+        <b>VGA ::</b>The Video Graphics Array is a system for displaying graphics. It was developed by IBM.
+    </string>
+    <string name="Internet_abbivation"><b>FTP ::</b>This is a service called File Transport Protocol which moves a file between computers using the Internet.\n
+        <b>HTML ::</b> HyperText Markup Language formats information so it can be transported on the Internet.
+        <b>HTTP ::</b>Hypertext Transfer Protocol is a set of instructions for the software that controls the movement of files on the Internet\n
+        <b>IP ::</b> This stands for Internet Protocol which is the set of rules that govern the systems connected to the Internet.
+        IP Address is a digital code specific to each computer that is hooked up to the Internet.\n
+        <b>ISP ::</b> The Internet Service Provider is the company which provides Internet service so you can connect your computer to the Internet.\n
+        <b>LAN ::</b>This stands for Local Area Network which is the servers that your computer connects to in your geographic area.\n
+        <b>USB ::</b>The Universal Serial Bus is used for communications between certain devices. It can connect keyboards, cameras, printers, mice, flash drives, and other devices. Its use has expanded from personal computers
+        to PDAs, smartphones, and video games, and is used as a power cord to connect devices to a wall outlet to charge them.\n
+        <b>URL ::</b> This is the Uniform Resource Locator which is a path to a certain file on the World Wide Web.\n
+
+
+
+    </string>
+    <string name="email_abbrivation"><b> GAL::</b>Get A Life\n
+    <b>GMATA :: </b> Great Minds Think Alike\n
+        <b>TIC ::</b>Tongue In Cheek\n
+        <b>ZZZ ::</b> Sleeping, Bored, Tired\n
+        <b>SITD ::</b>Still In The Dark\n
+        <b>KISS ::</b>Keep it Simple, Stupid \n
+
+
+    </string>
+    <string name="Daily_abbrivation">
+        <b> AIR::</b>All India Radio\n
+        <b>CBSE ::</b> Central Board of Secondary Education\n
+        <b>BCCI ::</b> Board of Cricket Control in India\n
+        <b>DoT ::</b>Department of Telecommunications\n
+        <b>IAF ::</b> Indian Air Force\n
+        <b>IGNOU ::</b>Indira Gandhi National Open University\n
+        <b>NRI ::</b>Non-Resident Indian\n
+        <b>SAIL ::</b> Steel Authority of India, a public sector undertaking\n
+        <b>RAC ::</b>Reservation Against Cancellation\N
+        <b>Sail ::</b>Steel Authority of India, a public sector undertaking (PSU)\n
+        <b>PAN ::</b> Permanent Account Number\n
+        <b>OBC :: </b>Other Backward \n
+        <b>ISRO ::</b>ndian Space Research Organisation
+
+
+
+
+
+
+
+    </string>
+    <string name="newt_questions"> <b>1. What is a Network?</b>\n
+
+    <b>Ans.</b>A network is a set of devices connected to each other using a physical transmission medium.
+        \n
+        <b>2. What is a Node?</b>\n
+        <b>Ans. Two or more computers are connected directly by an optical fiber or any other cable. A node is a point where a connection established.
+            It is a network component which is used to send, receive and forward the electronic information.</b>\n
+        <b>3. What is Network Topology?</b>\n
+        <b>Ans.</b>Network Topology is a physical layout of the computer network and it defines how the computers, devices,
+        cables etc are connected to each other.\n
+
+         <b>4.  What are Routers?</b>\n
+        <b>Ans.</b>The router is a network device which connects two or more network segments.
+        The router is used to transfer information from the source to destination.\n
+
+         <b>5.  Explain TCP/IP Model?</b>\n
+        <b>Ans.</b>The most widely used and available protocol is TCP/IP i.e. Transmission Control Protocol and Internet Protocol.
+        TCP/IP specifies how data should be packaged, transmitted and routed in their end to end data communication.\n
+
+
+
+        <b>6.   What is HTTP and what port does it use?</b>\n
+        <b>Ans.</b>HTTP is HyperText Transfer Protocol and it is responsible for web content.
+        Many web pages are using HTTP to transmit the web content and allow the display and navigation of HyperText..\n
+
+        <b>7. What is a Firewall?</b>\n
+
+        <b>Ans.</b>Firewall is a network security system that is used to protect computer networks from unauthorized access. It prevents malicious
+            access from outside to the computer network. A firewall can also be built to grant limited access to the outside users.\n
+        <b>8.  What is DNS?</b>\n
+
+        <b>Ans.</b>Domain Name Server (DNS), in a non-professional language and we can call it as Internet’s phone book.
+        All the public IP addresses and their hostnames are stored in the DNS and later it translates into a corresponding IP address.\n
+        <b>9.What is a Proxy Server</b>\n
+
+        <b>Ans.</b> For data transmission, IP addresses are required and even DNS uses IP addresses to route to the correct website. It means
+        without the knowledge of correct and actual IP addresses it is not possible to identify the physical location of the network.\n
+        <b>10.  What is NIC?</b>\n
+
+        <b>Ans.</b> NIC stands for Network Interface Card. It is also known as Network Adapter or Ethernet Card.
+            It is in the form of add-in card and is installed in a computer so that the computer can be connected to a network.\n
+        <b>11.  what is a VPN?</b>\n
+
+        <b>Ans.</b>VPN is the Virtual Private Network and is built on the Internet as a private wide area network.
+        Internet-based VPNs are less expensive and can be connected from anywhere in the world.\n
+
+
+
+
+
+    </string>
+    <string name="Machine_asked">EThis is about Topic 2</string>
+    <string name="Common">
+
+    <b>1. Name some of the latest Computer Processors?</b>\n
+        <b>Ans.</b>Intel Pentium Quad Core, Intel I3, I5 and I7 processor are some of the latest Computer Processor.\n
+
+        <b>2. How you keep yourself updated with the current technology??</b>\n
+        <b>Ans.</b>I keep myself connected with social networking sites, the first platform
+        for any technological advancement news and also keep surfing on the latest technology on internet..\n
+
+
+        <b>3. What are the tools that will be helpful to you in identifying the problems and solving them?</b>\n
+        <b>Ans.</b>Manuals, Knowledge, team-members and experience are the tools that will be helpful to trouble shoot the problem and solving them..\n
+
+        <b>4. What is the expected period of an average call while dealing with the customers?</b>\n
+        <b>Ans.</b>The expected period of an average call would be around 2-3 minutes, sometimes less or more depending on the problem complexity..\n
+
+        <b>5. Why 8085 processor is called 8 bit processor?</b>\n
+        <b>Ans.</b>It is called 8 bit processor as it has 8 bit ALU (Arithmetic Logic Unit).\n
+
+
+        <b>6. What does it mean by interrupt?</b>\n
+        <b>Ans.</b>To perform a particular task, interrupt is a signal send by external device to the processor.\n
+
+        <b>7.What is Latch?</b>\n
+        <b>Ans.</b>It is a temporary storage device controlled by a timing signal, which can store 1 or 0.
+        It is a D-type flip flop storage device.\n
+
+
+        <b>8. What is the disadvantage of microprocessor?</b>\n
+        <b>Ans.</b>It has a limitation on the size of the data, also most microprocessor does not support floating point operations.\n
+
+        <b>9.  What do you mean by DHCP?</b>\n
+        <b>Ans.</b>DHCP stands for Dynamic Host Configuration Protocol, it is a network protocol, and it enables the server to assign automatically, IP address to a computer
+        .\n
+
+        <b>10.What are RJ45 and RJ11 connectors??</b>\n
+        <b>Ans.</b>RJ45 connectors are used for LAN/internet connections while RJ11 connectors are used for Table cable connectors.\n
+
+
+
+    <b>11. What is over clocking??</b>\n
+        <b>Ans.</b>It is a process where the computer component is forced to run at a higher clock rate.\n
+        <b>12. What is chipset? How is it different from processor and motherboard?</b>\n
+        <b>Ans.</b> Chipset is one of the processing devices in a computer. It is a number of integrated circuits, designed to control how information travels between other components and processor. It is a group of microchip to work as a unit to perform one or more related functions. While motherboard is where all other components like CPU, Memory, Sockets for external connectors and drives are attached.  Chipset is a built in feature of Motherboard. While, processor is a main integrated circuit block, which does the function according to the instruction of a computer program.
+        It is based on the logical, arithmetical and input/output of the system.\n
+
+
+
+    </string>
 </resources>

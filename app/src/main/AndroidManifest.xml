@@ -18,7 +18,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".quiz_activity" />
         <activity android:name=".mainquizactivityDisplay" />
         <activity android:name=".MainActivity" />
@@ -26,9 +25,9 @@
         <activity android:name=".ContentCourseForCPP" />
         <activity android:name=".ContentCourseForC" />
         <activity android:name=".First_Screen" />
-        <activity android:name=".Resend_Mail_Activity"></activity>
+        <activity android:name=".Resend_Mail_Activity" />
+        <activity android:name=".ContentCourseForQuants" />
+        <activity android:name=".ContentCourseForEnglish"></activity>
     </application>
-
-
 
 </manifest>

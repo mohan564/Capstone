@@ -186,6 +186,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void onCpp(View view) {
         Intent intent = new Intent(this,ContentCourseForCPP.class);
         startActivity(intent);
+
+
+    }
+    public void Quants(View view)
+    {
+        Intent intent=new Intent(this,ContentCourseForQuants.class);
+        startActivity(intent);
+    }
+    public void English(View view)
+    {
+        Intent intent=new Intent(this,ContentCourseForEnglish.class);
+        startActivity(intent);
     }
 
 
