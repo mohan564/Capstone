@@ -2,7 +2,10 @@ package com.example.harpreet.vasdapunjab;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ExpandableListView;
+
+import com.github.aakira.expandablelayout.ExpandableRelativeLayout;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,53 +13,38 @@ import java.util.List;
 
 public class ContentCourseForQuants extends AppCompatActivity
 {
-    private cpp_Adapter listAdapter;
-    private ExpandableListView listView;
-    private List<String > list;
-    private HashMap<String,List<String>> hashMap;
+    private ExpandableRelativeLayout introContent;
+    private ExpandableRelativeLayout introContent2;
+    private ExpandableRelativeLayout introContent3;
+    private ExpandableRelativeLayout introContent4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_content_course_for_quants);
-        listView=findViewById(R.id.Quants_Expandable);
-        initdata();
-        listAdapter=new cpp_Adapter(this,list,hashMap);
-        listView.setAdapter(listAdapter);
+
     }
 
-    private void initdata()
+
+    public void showContent(View view)
     {
-
-        list=new ArrayList<>();
-        hashMap=new HashMap<>();
-        list.add("Operating Systems and Data Storage");
-        list.add("Connecting to the Internet");
-        list.add("Common Email Abbreviations");
-        list.add("Daily Uses Abbrivation");
-        list.add("QTopic4");
-        list.add("QTopic5");
-        List<String> Topic1=new ArrayList<>();
-        Topic1.add(getString(R.string.OS_Abbrevation));
-
-
-        List<String> Topic2=new ArrayList<>();
-        Topic2.add(getString(R.string.Internet_abbivation));
-
-
-        List<String> Topic3=new ArrayList<>();
-        Topic3.add(getString(R.string.email_abbrivation));
-
-
-        List<String> Topic4=new ArrayList<>();
-        Topic4.add(getString(R.string.Daily_abbrivation));
-
-        hashMap.put(list.get(0),Topic1);
-        hashMap.put(list.get(1),Topic2);
-        hashMap.put(list.get(2),Topic3);
-        hashMap.put(list.get(3),Topic4);
-
-
+        introContent =(ExpandableRelativeLayout) findViewById(R.id.Inroduction_content);
+        introContent.toggle();
+    }
+    public void showContent2(View view)
+    {
+        introContent2 =(ExpandableRelativeLayout)findViewById(R.id.id_WHY_TO_USE_CPP);
+        introContent2.toggle();
+    }
+    public void showContent3(View view)
+    {
+        introContent3 =(ExpandableRelativeLayout)findViewById(R.id.id_Data_Type);
+        introContent3.toggle();
+    }
+    public void showContent4(View view)
+    {
+        introContent4 =(ExpandableRelativeLayout)findViewById(R.id.id_Basic_syntax);
+        introContent4.toggle();
     }
 }

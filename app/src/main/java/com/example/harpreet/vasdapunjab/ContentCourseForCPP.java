@@ -8,100 +8,105 @@ import android.view.ViewGroup;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 
+import com.github.aakira.expandablelayout.ExpandableRelativeLayout;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 public class ContentCourseForCPP extends AppCompatActivity
 {
-    private cpp_Adapter listAdapter;
-    private ExpandableListView listView;
-    private List<String > list;
-    private  HashMap<String,List<String>> hashMap;
+    private ExpandableRelativeLayout introContent;
+    private ExpandableRelativeLayout introContent2;
+    private ExpandableRelativeLayout introContent3;
+    private ExpandableRelativeLayout introContent4;
+    private ExpandableRelativeLayout introContent5;
+    private ExpandableRelativeLayout introContent6;
+    private ExpandableRelativeLayout introContent7;
+    private ExpandableRelativeLayout introContent8;
+    private ExpandableRelativeLayout introContent9;
+    private ExpandableRelativeLayout introContent10;
+    private ExpandableRelativeLayout introContent11;
+    private ExpandableRelativeLayout introContent12;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_content_course_for_cpp);
-        listView=(ExpandableListView)findViewById(R.id.Cpp_Expandable);
-        initdata();
-        listAdapter=new cpp_Adapter(this,list,hashMap);
-        listView.setAdapter(listAdapter);
-
 
         }
 
-    private void initdata()
+
+    public void showContent(View view)
     {
-        list=new ArrayList<>();
-        hashMap=new HashMap<>();
-        list.add("INTRODUCTION");
-        list.add("Why to use cpp?");
-        list.add("Data Types");
-        list.add("Variables");
-        list.add("Operators");
-        list.add("Functions");
-        list.add("Inheritance");
-        list.add("Polymorphism");
-        list.add("Abstraction");
-        list.add("Encapsulations");
-        list.add("Interfaces");
-        list.add("Files");
-
-        List<String> Topic1=new ArrayList<>();
-        Topic1.add(getString(R.string.introduction1));
-
-
-        List<String> Topic2=new ArrayList<>();
-        Topic2.add(getString(R.string.why_to_use_cpp));
-
-
-        List<String> Topic3=new ArrayList<>();
-        Topic3.add(getString(R.string.data_types_cpp));
-
-
-        List<String> Topic4=new ArrayList<>();
-        Topic4.add(getString(R.string.variables_cpp));
-
-        List<String> Topic5=new ArrayList<>();
-        Topic5.add(getString(R.string.operators_cpp));
-
-
-        List<String> Topic6=new ArrayList<>();
-        Topic6.add(getString(R.string.Functios_cpp));
-
-        List<String> Topic7=new ArrayList<>();
-        Topic7.add(getString(R.string.Inheritance_cpp));
-
-        List<String> Topic8=new ArrayList<>();
-        Topic8.add(getString(R.string.poly_cpp));
-
-        List<String> Topic9=new ArrayList<>();
-        Topic9.add(getString(R.string.Abstraction_cpp));
-        List<String> Topic10=new ArrayList<>();
-        Topic10.add(getString(R.string.Encapsulation_cpp));
-        List<String> Topic11=new ArrayList<>();
-        Topic11.add(getString(R.string.Interfaces_cpp));
-        List<String> Topic12=new ArrayList<>();
-        Topic12.add(getString(R.string.files_cpp));
-
-
-        hashMap.put(list.get(0),Topic1);
-        hashMap.put(list.get(1),Topic2);
-        hashMap.put(list.get(2),Topic3);
-        hashMap.put(list.get(3),Topic4);
-        hashMap.put(list.get(4),Topic5);
-        hashMap.put(list.get(5),Topic6);
-        hashMap.put(list.get(6),Topic7);
-        hashMap.put(list.get(7),Topic8);
-        hashMap.put(list.get(8),Topic9);
-        hashMap.put(list.get(9),Topic10);
-        hashMap.put(list.get(10),Topic11);
-        hashMap.put(list.get(11),Topic12);
-
+        introContent =(ExpandableRelativeLayout) findViewById(R.id.Inroduction_content);
+        introContent.toggle();
+    }
+    public void showContent2(View view)
+    {
+        introContent2 =(ExpandableRelativeLayout)findViewById(R.id.id_WHY_TO_USE_CPP);
+        introContent2.toggle();
+    }
+    public void showContent3(View view)
+    {
+        introContent3 =(ExpandableRelativeLayout)findViewById(R.id.id_Data_Type);
+        introContent3.toggle();
+    }
+    public void showContent4(View view)
+    {
+        introContent4 =(ExpandableRelativeLayout)findViewById(R.id.id_Basic_syntax);
+        introContent4.toggle();
+    }
+    public void showContent5(View view)
+    {
+        introContent5 =(ExpandableRelativeLayout)findViewById(R.id.id_Varibles);
+        introContent5.toggle();
 
     }
+    public void showContent6(View view)
+    {
+        introContent6 =(ExpandableRelativeLayout)findViewById(R.id.id_Operator_C);
+        introContent6.toggle();
+
+    }
+    public void showContent7(View view)
+    {
+        introContent7 =(ExpandableRelativeLayout)findViewById(R.id.id_Functions);
+        introContent7.toggle();
+
+    }
+    public void showContent8(View view)
+    {
+        introContent8 =(ExpandableRelativeLayout)findViewById(R.id.id_Arrays);
+        introContent8.toggle();
+
+    }
+    public void showContent9(View view)
+    {
+        introContent9 =(ExpandableRelativeLayout)findViewById(R.id.id_Pointer);
+        introContent9.toggle();
+
+    }
+    public void showContent10(View view)
+    {
+        introContent10 =(ExpandableRelativeLayout)findViewById(R.id.id_Loops);
+        introContent10.toggle();
+
+    }
+    public void showContent11(View view)
+    {
+        introContent11 =(ExpandableRelativeLayout)findViewById(R.id.id_Structure_Union);
+        introContent11.toggle();
+
+    }
+    public void showContent12(View view)
+    {
+        introContent12 =(ExpandableRelativeLayout)findViewById(R.id.id_File);
+        introContent12.toggle();
+
+    }
+
 }
 

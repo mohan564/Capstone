@@ -1,16 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.harpreet.vasdapunjab.ContentCourseForEnglish">
+<ScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ExpandableListView
-
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:id="@+id/English_Expandable"
-        android:layout_height="match_parent">
-    </ExpandableListView>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fcfcfc"
+        tools:context=".ContentCourseForC">
 
-</LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/inro_ll"
+                android:weightSum="3"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/intro"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="Networking Based"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="showContent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_keyboard_arrow_down"/>
+
+
+            </LinearLayout>
+
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/Inroduction_content"
+                android:layout_width="match_parent"
+                android:layout_below="@id/inro_ll"
+                android:layout_height="wrap_content"
+                app:ael_expanded="false"
+                app:ael_duration="500"
+                app:ael_interpolator="bounce"
+
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="5dp"
+                    android:textSize="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:text="@string/newt_questions"/>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/inro_l2"
+                android:weightSum="3"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/intro"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="Freqently asked questions"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:onClick="showContent2"
+                    android:src="@drawable/ic_keyboard_arrow_down"/>
+
+
+            </LinearLayout>
+
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/id_WHY_TO_USE_CPP"
+                android:layout_width="match_parent"
+                android:layout_below="@id/inro_l2"
+                android:layout_height="wrap_content"
+                app:ael_expanded="false"
+                app:ael_duration="500"
+                app:ael_interpolator="bounce"
+
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="5dp"
+                    android:textSize="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:text="@string/Common">
+                </TextView>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/inro_l3"
+                android:weightSum="3"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/intro"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="Machine Based"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:onClick="showContent3"
+                    android:src="@drawable/ic_keyboard_arrow_down"/>
+
+
+            </LinearLayout>
+
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/id_Data_Type"
+                android:layout_width="match_parent"
+                android:layout_below="@id/inro_l3"
+                android:layout_height="wrap_content"
+                app:ael_expanded="false"
+                app:ael_duration="500"
+                app:ael_interpolator="bounce"
+
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="5dp"
+                    android:textSize="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:text="@string/Machine_asked">
+                </TextView>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

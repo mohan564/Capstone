@@ -1,52 +1,873 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:background="#fcfcfc"
-    android:layout_height="match_parent"
-    tools:context=".ContentCourseForC">
+<ScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <android.support.design.widget.AppBarLayout
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:id="@+id/appBarId">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fcfcfc"
+        tools:context=".ContentCourseForC">
 
-        <android.support.design.widget.CollapsingToolbarLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_scrollFlags="exitUntilCollapsed|scroll"
-            app:contentScrim="?attr/colorPrimary"
-            app:title="C prograamming"
-            app:expandedTitleMarginStart="48dp"
-            android:background="@drawable/gradient1">
-
-            <android.support.v7.widget.Toolbar
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="#ffffff">
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:id="@+id/toolBarId"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-                app:layout_collapseMode="parallax">
-            </android.support.v7.widget.Toolbar>
-        </android.support.design.widget.CollapsingToolbarLayout>
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/inro_ll"
+                android:weightSum="3"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
 
-    </android.support.design.widget.AppBarLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/intro"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:layout_marginStart="12dp" />
 
-    <android.support.v4.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </android.support.v4.widget.NestedScrollView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="Introduction"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="showContent"
+                    android:src="@drawable/ic_keyboard_arrow_down"/>
 
 
-    <ExpandableListView
-        android:layout_marginTop="200dp"
-        android:layout_width="match_parent"
-        android:id="@+id/Cpp_Expandable"
-        android:layout_height="match_parent">
-    </ExpandableListView>
+            </LinearLayout>
 
-</android.support.design.widget.CoordinatorLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/Inroduction_content"
+                android:layout_width="match_parent"
+                android:layout_below="@id/inro_ll"
+                android:layout_height="wrap_content"
+                app:ael_expanded="false"
+                app:ael_duration="500"
+                app:ael_interpolator="bounce"
+
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="5dp"
+                    android:textSize="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:text="@string/introduction1"/>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/inro_l2"
+                android:weightSum="3"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/intro"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="WHY TO USE CPP ?"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="showContent2"
+                    android:src="@drawable/ic_keyboard_arrow_down"/>
+
+
+            </LinearLayout>
+
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/id_WHY_TO_USE_CPP"
+                android:layout_width="match_parent"
+                android:layout_below="@id/inro_l2"
+                android:layout_height="wrap_content"
+                app:ael_expanded="false"
+                app:ael_duration="500"
+                app:ael_interpolator="bounce"
+
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="5dp"
+                    android:textSize="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:text="@string/why_to_use_cpp">
+                </TextView>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/inro_l3"
+                android:weightSum="3"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/intro"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="Data Types"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="showContent3"
+                    android:src="@drawable/ic_keyboard_arrow_down"/>
+
+
+            </LinearLayout>
+
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/id_Data_Type"
+                android:layout_width="match_parent"
+                android:layout_below="@id/inro_l3"
+                android:layout_height="wrap_content"
+                app:ael_expanded="false"
+                app:ael_duration="500"
+                app:ael_interpolator="bounce"
+
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="5dp"
+                    android:textSize="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:text="@string/data_types_cpp">
+                </TextView>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/inro_l4"
+                android:weightSum="3"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/intro"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="Variables"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="showContent4"
+                    android:src="@drawable/ic_keyboard_arrow_down"/>
+
+
+            </LinearLayout>
+
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/id_Basic_syntax"
+                android:layout_width="match_parent"
+                android:layout_below="@id/inro_l4"
+                android:layout_height="wrap_content"
+                app:ael_expanded="false"
+                app:ael_duration="500"
+                app:ael_interpolator="bounce"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="5dp"
+                    android:textSize="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:text="@string/variables_cpp">
+                </TextView>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/inro_l5"
+                android:weightSum="3"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/intro"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="OPerators"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="showContent5"
+                    android:src="@drawable/ic_keyboard_arrow_down"/>
+
+
+            </LinearLayout>
+
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/id_Varibles"
+                android:layout_width="match_parent"
+                android:layout_below="@id/inro_l5"
+                android:layout_height="wrap_content"
+                app:ael_expanded="false"
+                app:ael_duration="500"
+                app:ael_interpolator="bounce"
+
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="5dp"
+                    android:textSize="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:text="@string/operators_cpp">
+                </TextView>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/inro_l6"
+                android:weightSum="3"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/intro"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="Fuctions"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="showContent6"
+                    android:src="@drawable/ic_keyboard_arrow_down"/>
+
+
+            </LinearLayout>
+
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/id_Operator_C"
+                android:layout_width="match_parent"
+                android:layout_below="@id/inro_l6"
+                android:layout_height="wrap_content"
+                app:ael_expanded="false"
+                app:ael_duration="500"
+                app:ael_interpolator="bounce"
+
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="5dp"
+                    android:textSize="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:text="@string/Functios_cpp">
+                </TextView>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/inro_l7"
+                android:weightSum="3"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/intro"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="Inheritnace"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="showContent7"
+                    android:src="@drawable/ic_keyboard_arrow_down"/>
+
+
+            </LinearLayout>
+
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/id_Functions"
+                android:layout_width="match_parent"
+                android:layout_below="@id/inro_l7"
+                android:layout_height="wrap_content"
+                app:ael_expanded="false"
+                app:ael_duration="500"
+                app:ael_interpolator="bounce"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="5dp"
+                    android:textSize="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:text="@string/Inheritance_cpp">
+                </TextView>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/inro_l8"
+                android:weightSum="3"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/intro"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="Polymorphism"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="showContent8"
+                    android:src="@drawable/ic_keyboard_arrow_down"/>
+
+
+            </LinearLayout>
+
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/id_Arrays"
+                android:layout_width="match_parent"
+                android:layout_below="@id/inro_l8"
+                android:layout_height="wrap_content"
+                app:ael_expanded="false"
+                app:ael_duration="500"
+                app:ael_interpolator="bounce"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="5dp"
+                    android:textSize="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:text="@string/poly_cpp">
+                </TextView>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/inro_l9"
+                android:weightSum="3"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/intro"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="Abstraction"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="showContent9"
+                    android:src="@drawable/ic_keyboard_arrow_down"/>
+
+
+            </LinearLayout>
+
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/id_Pointer"
+                android:layout_width="match_parent"
+                android:layout_below="@id/inro_l9"
+                android:layout_height="wrap_content"
+                app:ael_expanded="false"
+                app:ael_duration="500"
+                app:ael_interpolator="bounce"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="5dp"
+                    android:textSize="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:text="@string/Abstraction_cpp">
+                </TextView>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/inro_l0"
+                android:weightSum="3"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/intro"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="Encapsulation"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="showContent10"
+                    android:src="@drawable/ic_keyboard_arrow_down"/>
+
+
+            </LinearLayout>
+
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/id_Loops"
+                android:layout_width="match_parent"
+                android:layout_below="@id/inro_l0"
+                android:layout_height="wrap_content"
+                app:ael_expanded="false"
+                app:ael_duration="500"
+                app:ael_interpolator="bounce"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="5dp"
+                    android:textSize="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:text="@string/Encapsulation_cpp">
+                </TextView>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/inro_l1"
+                android:weightSum="3"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/intro"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="Interfaces"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="showContent11"
+                    android:src="@drawable/ic_keyboard_arrow_down"/>
+
+
+            </LinearLayout>
+
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/id_Structure_Union"
+                android:layout_width="match_parent"
+                android:layout_below="@id/inro_l1"
+                android:layout_height="wrap_content"
+                app:ael_expanded="false"
+                app:ael_duration="500"
+                app:ael_interpolator="bounce"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="5dp"
+                    android:textSize="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:text="@string/Interfaces_cpp">
+                </TextView>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/llq1"
+                android:weightSum="3"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/intro"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="File"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="showContent12"
+                    android:src="@drawable/ic_keyboard_arrow_down"/>
+
+
+            </LinearLayout>
+
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/id_File"
+                android:layout_width="match_parent"
+                android:layout_below="@id/llq1"
+                android:layout_height="wrap_content"
+                app:ael_expanded="false"
+                app:ael_duration="500"
+                app:ael_interpolator="bounce"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="5dp"
+                    android:textSize="16dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:text="@string/files_cpp">
+                </TextView>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
 
 
 
