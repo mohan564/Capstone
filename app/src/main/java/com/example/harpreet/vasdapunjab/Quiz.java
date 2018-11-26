@@ -25,7 +25,7 @@ import com.google.firebase.storage.FirebaseStorage;
 public class Quiz extends Fragment {
 
     TextView mScore,mQuestion;
-    Button mChoice1,mChoice2,mChoice3,mChoice4;
+    Button mChoice1,mChoice2,mChoice3,mChoice4,skip;
     int Score;
     String mAnswer;
     int mQuestionNumber;
@@ -264,7 +264,33 @@ public class Quiz extends Fragment {
                         alert = builder.create();
                         alert.show();
                         //Toast.makeText(getActivity(), "Last Question", Toast.LENGTH_SHORT).show();
-                    }                }
+                    }
+                }
+            }
+        });
+
+        skip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mQuestionNumber++;
+                if(mQuestionNumber<=19)
+                    updateQuestions();
+
+                if(mQuestionNumber==20) {
+                    builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage("Your Score is:- " + Score + "/20")
+                            .setCancelable(false)
+                            .setTitle("Quiz Completed")
+                            .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    // getFragmentManager().beginTransaction().replace(R.id.frameLayout,new Home()).commit();
+
+                                }
+                            });
+                    alert = builder.create();
+                    alert.show();
+                }
+
             }
         });
 
@@ -285,6 +311,7 @@ public class Quiz extends Fragment {
         mChoice2 = view.findViewById(R.id.choice2);
         mChoice3 = view.findViewById(R.id.choice3);
         mChoice4 = view.findViewById(R.id.choice4);
+        skip = view.findViewById(R.id.skip);
 
         mQuestionNumber = 0;
         Score = 0;

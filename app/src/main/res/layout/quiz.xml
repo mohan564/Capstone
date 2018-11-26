@@ -79,6 +79,16 @@
         android:layout_marginBottom="10dp"
         android:id="@+id/choice4"/>
 
+    <Button
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:text="Skip this Question"
+        android:layout_gravity="center"
+        android:background="#0091EA"
+        android:textColor="#fff"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/skip"/>
+
 
 
 </LinearLayout>
