@@ -49,7 +49,7 @@
         with a letter A to Z, a to z, or an underscore followed by zero or more letters, underscores, and digits (0 to 9).\n\n
         <b>4.Keywords</b>\n
         The following list shows the reserved words in C.
-        These reserved words may not be used as constants or variables or any other identifier names.\n
+        These reserved wo rds may not be used as constants or variables or any other identifier names.\n
         <b>Some common used keywords are: </b>
          <b>1.</b>auto\n
         <b>2.</b>else\n
