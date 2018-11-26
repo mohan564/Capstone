@@ -3,11 +3,82 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Quiz"
-        android:textSize="50sp"
-        android:textColor="#000"/>
+        android:padding="8dp"
+        android:layout_marginBottom="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/score_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score"
+            android:textColor="#000"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Question goes Here"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/question"/>
+
+
+    <Button
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:text="Choice 1 goes here"
+        android:layout_gravity="center"
+        android:background="#0091EA"
+        android:textColor="#fff"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/choice1"/>
+
+    <Button
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:text="Choice 2 goes here"
+        android:layout_gravity="center"
+        android:background="#0091EA"
+        android:textColor="#fff"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/choice2"/>
+
+    <Button
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:text="Choice 3 goes here"
+        android:layout_gravity="center"
+        android:background="#0091EA"
+        android:textColor="#fff"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/choice3"/>
+
+    <Button
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:text="Choice 4 goes here"
+        android:layout_gravity="center"
+        android:background="#0091EA"
+        android:textColor="#fff"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/choice4"/>
+
+
 
 </LinearLayout>

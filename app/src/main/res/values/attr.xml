@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="custum">
+
+        <attr name="colorPrimary" format="color"></attr>
+        <attr name="colorPrimaryDark" format="color"></attr>
+        <attr name="colorAccent" format="color"></attr>
+
+    </declare-styleable>
+
+</resources>
