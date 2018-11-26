@@ -30,7 +30,7 @@ public class Quiz extends Fragment {
     String mAnswer;
     int mQuestionNumber;
     FirebaseDatabase database;
-    DatabaseReference mQuestionRef,mChoice1Ref,mChoice2Ref,mChoice3Ref,mChoice4Ref,mChoice5Ref,mAnswerRef;
+    DatabaseReference mQuestionRef,mChoice1Ref,mChoice2Ref,mChoice3Ref,mChoice4Ref,mAnswerRef;
     AlertDialog.Builder builder;
     AlertDialog alert;
     ProgressDialog dialog;

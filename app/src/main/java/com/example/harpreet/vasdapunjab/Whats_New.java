@@ -296,7 +296,7 @@ public class Whats_New extends Fragment {
         reference = storage.getReferenceFromUrl("gs://preuniprep-master.appspot.com");
 
         //1 image fetch karn layi code
-        StorageReference pathreference = reference.child("image1.jpg");
+        StorageReference pathreference = reference.child("image1.png");
 
         File myFile = null;
 
@@ -340,7 +340,7 @@ public class Whats_New extends Fragment {
         pathreference2.getFile(myFile2).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-                Toast.makeText(getActivity(), "Image 2 fetched", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(), "Image 2 fetched", Toast.LENGTH_SHORT).show();
                 Bitmap bitmap2 = BitmapFactory.decodeFile(finalMyFile2.getAbsolutePath());
                 image_2.setImageBitmap(bitmap2);
                 dialog.dismiss();
@@ -370,7 +370,7 @@ public class Whats_New extends Fragment {
         pathreference3.getFile(myFile3).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-                Toast.makeText(getActivity(), "Image 3 fetched", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(), "Image 3 fetched", Toast.LENGTH_SHORT).show();
                 Bitmap bitmap3 = BitmapFactory.decodeFile(finalMyFile3.getAbsolutePath());
                 image_3.setImageBitmap(bitmap3);
                 dialog.dismiss();
@@ -399,7 +399,7 @@ public class Whats_New extends Fragment {
         pathreference4.getFile(myFile4).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-                Toast.makeText(getActivity(), "Image 4 fetched", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(), "Image 4 fetched", Toast.LENGTH_SHORT).show();
                 Bitmap bitmap4 = BitmapFactory.decodeFile(finalMyFile4.getAbsolutePath());
                 image_4.setImageBitmap(bitmap4);
                 dialog.dismiss();
@@ -413,7 +413,7 @@ public class Whats_New extends Fragment {
         });
 
         //5 image fetch karn layi code
-        StorageReference pathreference5 = reference.child("image5.jpg");
+        StorageReference pathreference5 = reference.child("image5.png");
 
         File myFile5 = null;
 
@@ -428,7 +428,7 @@ public class Whats_New extends Fragment {
         pathreference5.getFile(myFile5).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-                Toast.makeText(getActivity(), "Image 5 fetched", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(), "Image 5 fetched", Toast.LENGTH_SHORT).show();
                 Bitmap bitmap5 = BitmapFactory.decodeFile(finalMyFile5.getAbsolutePath());
                 image_5.setImageBitmap(bitmap5);
                 dialog.dismiss();

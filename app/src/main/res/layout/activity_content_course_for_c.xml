@@ -19,7 +19,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
-        android:background="#ffffff">
+        android:background="#fff">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -68,7 +68,6 @@
             app:ael_expanded="false"
             app:ael_duration="500"
             app:ael_interpolator="bounce"
-
             app:ael_orientation="vertical">
 
             <TextView
@@ -79,7 +78,7 @@
                 android:paddingTop="5dp"
                 android:textSize="16dp"
                 android:paddingBottom="10dp"
-                android:textColor="#000000"
+                android:textColor="#000"
                 android:text="@string/Introducation1"/>
         </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
