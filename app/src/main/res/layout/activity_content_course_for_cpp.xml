@@ -66,7 +66,7 @@
                 android:layout_height="wrap_content"
                 app:ael_expanded="false"
                 app:ael_duration="500"
-                app:ael_interpolator="bounce"
+
 
                 app:ael_orientation="vertical">
 
@@ -103,7 +103,7 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/intro"
+                    android:src="@drawable/why"
                     android:layout_gravity="center"
                     android:layout_weight="0"
                     android:layout_marginStart="12dp" />
@@ -117,7 +117,7 @@
                     android:layout_weight="2"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
-                    android:text="WHY TO USE CPP ?"/>
+                    android:text="Why use cpp ?"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -137,7 +137,6 @@
                 android:layout_height="wrap_content"
                 app:ael_expanded="false"
                 app:ael_duration="500"
-                app:ael_interpolator="bounce"
 
                 app:ael_orientation="vertical">
 
@@ -174,7 +173,7 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/intro"
+                    android:src="@drawable/opertors"
                     android:layout_gravity="center"
                     android:layout_weight="0"
                     android:layout_marginStart="12dp" />
@@ -208,7 +207,6 @@
                 android:layout_height="wrap_content"
                 app:ael_expanded="false"
                 app:ael_duration="500"
-                app:ael_interpolator="bounce"
 
                 app:ael_orientation="vertical">
 
@@ -246,7 +244,7 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/intro"
+                    android:src="@drawable/variables"
                     android:layout_gravity="center"
                     android:layout_weight="0"
                     android:layout_marginStart="12dp" />
@@ -280,7 +278,6 @@
                 android:layout_height="wrap_content"
                 app:ael_expanded="false"
                 app:ael_duration="500"
-                app:ael_interpolator="bounce"
                 app:ael_orientation="vertical">
 
                 <TextView
@@ -317,7 +314,7 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/intro"
+                    android:src="@drawable/opertors"
                     android:layout_gravity="center"
                     android:layout_weight="0"
                     android:layout_marginStart="12dp" />
@@ -351,7 +348,7 @@
                 android:layout_height="wrap_content"
                 app:ael_expanded="false"
                 app:ael_duration="500"
-                app:ael_interpolator="bounce"
+
 
                 app:ael_orientation="vertical">
 
@@ -389,7 +386,7 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/intro"
+                    android:src="@drawable/function"
                     android:layout_gravity="center"
                     android:layout_weight="0"
                     android:layout_marginStart="12dp" />
@@ -423,7 +420,7 @@
                 android:layout_height="wrap_content"
                 app:ael_expanded="false"
                 app:ael_duration="500"
-                app:ael_interpolator="bounce"
+
 
                 app:ael_orientation="vertical">
 
@@ -461,7 +458,7 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/intro"
+                    android:src="@drawable/inheritance"
                     android:layout_gravity="center"
                     android:layout_weight="0"
                     android:layout_marginStart="12dp" />
@@ -495,7 +492,7 @@
                 android:layout_height="wrap_content"
                 app:ael_expanded="false"
                 app:ael_duration="500"
-                app:ael_interpolator="bounce"
+
                 app:ael_orientation="vertical">
 
                 <TextView
@@ -532,7 +529,7 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/intro"
+                    android:src="@drawable/polymorphism"
                     android:layout_gravity="center"
                     android:layout_weight="0"
                     android:layout_marginStart="12dp" />
@@ -566,7 +563,7 @@
                 android:layout_height="wrap_content"
                 app:ael_expanded="false"
                 app:ael_duration="500"
-                app:ael_interpolator="bounce"
+
                 app:ael_orientation="vertical">
 
                 <TextView
@@ -603,7 +600,7 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/intro"
+                    android:src="@drawable/structure"
                     android:layout_gravity="center"
                     android:layout_weight="0"
                     android:layout_marginStart="12dp" />
@@ -674,7 +671,7 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/intro"
+                    android:src="@drawable/exchange"
                     android:layout_gravity="center"
                     android:layout_weight="0"
                     android:layout_marginStart="12dp" />
@@ -816,7 +813,7 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/intro"
+                    android:src="@drawable/fileinput"
                     android:layout_gravity="center"
                     android:layout_weight="0"
                     android:layout_marginStart="12dp" />
@@ -830,7 +827,7 @@
                     android:layout_weight="2"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
-                    android:text="File"/>
+                    android:text="Files"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

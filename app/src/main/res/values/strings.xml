@@ -18,8 +18,8 @@
         at the Bell Telephone Laboratories to develop the UNIX operating system. C is the most widely used computer language.
         It keeps fluctuating at number one scale of popularity along with Java programming language,
         which is also equally popular and most widely used among modern software programmers.\n\n
-        The UNIX operating system, the C compiler, and essentially all UNIX application programs have been written in C.
-        C has now become a widely used professional language for various reasons −\n\n
+        The UNIX operating system, the C compiler, and essentially all UNIX application programs have been written in C.\n
+       <b> C has now become a widely used professional language for various reasons −</b>\n\n
         1.Easy to learn \n
         2.Structured language\n
         3.It produces efficient programs\n
@@ -89,7 +89,7 @@
 
     </string>
     <string name="Why_to_use_c11">C was initially used for system development work, particularly the programs that make-up the operating system. C was adopted as a system development language because
-        it produces code that runs nearly as fast as the code written in assembly language. Some examples of the use
+        it produces code that runs nearly as fast as the code written in assembly language.\n<b>Some examples of the use</b>
         of C might be − \n\n
         <b>1.</b>Operating Systems\n
         <b>2.</b>Language Compilers\n
@@ -101,26 +101,26 @@
     <string name="data_type_c">The following table provides the details of standard
         integer types with their storage sizes and value ranges −\n
         <b>1.</b>char\n
-                <b>Storage Size</b> 1 byte
-                <b>Range</b>-128 to 127 or 0 to 255
+                <b>Storage Size</b> 1 byte\n
+                <b>Range</b>-128 to 127 or 0 to 255\n\n
          <b>2.Singned Char</b>char\n
-                <b>Storage Size</b> 1 byte
-                <b>Range</b>-128 to 127
+                <b>Storage Size</b> 1 byte\n
+                <b>Range</b>-128 to 127\n\n
 
         <b>3.Singned Char</b> \n
-                <b>Storage Size</b> 1 byte
-                <b>Range</b> 0 to 255
+                <b>Storage Size</b> 1 byte\n
+                <b>Range</b> 0 to 255\n\n
          <b>4.int</b>\n
-                <b>Storage Size</b> 2 or 4 bytes
-                <b>Range</b>-32,768 to 32,767 or -2,147,483,648 to 2,147,483,647
+                <b>Storage Size</b> 2 or 4 bytes\n
+                <b>Range</b>-32,768 to 32,767 or -2,147,483,648 to 2,147,483,647\n\n
          <b>5.unsigned int</b>\n
-                <b>Storage Size</b> 2 or 4 bytes
-                <b>Range</b>0 to 65,535 or 0 to 4,294,967,295
+                <b>Storage Size</b> 2 or 4 bytes\n
+                <b>Range</b>0 to 65,535 or 0 to 4,294,967,295\nn\
         <b>1.</b>short\n
-                <b>Storage Size</b>2 bytes
-                <b>Range</b>-32,768 to 32,767
+                <b>Storage Size</b>2 bytes\n
+                <b>Range</b>-32,768 to 32,767\n\n
          <b>1.</b>Long\n
-                <b>Storage Size</b> 4 bytes
+                <b>Storage Size</b> 4 bytes\n
                 <b>Range</b>-2,147,483,648 to 2,147,483,647\n\n
 
 
@@ -129,13 +129,13 @@
     <string name="variables_c">A variable is nothing but a name given to a storage area that our programs can manipulate.
         Each variable in C has a specific type, which determines the size and layout of the variable memory;
         the range of values that can be stored within that memory; and the set of operations
-        that can be applied to the variable.\n
-        There will be the following basic variable types −\n
+        that can be applied to the variable.\n\n
+        <b>There will be the following basic variable types −</b>\n
          <b>1.</b>void\n
         <b>2.</b>float\n
         <b>3.</b>char\n
         <b>4.</b>double\n
-        <b>5.</b>int\n
+        <b>5.</b>int\n\n
         <b>Variable Definition in C</b>\n
         A variable definition tells the compiler where and how much storage to create for the variable.
         A variable definition specifies a data type and contains a list of one or more variables of that type as follows −\n
@@ -150,26 +150,26 @@
          <b>1.Arithmetic Operators</b>\n
                 <b>a.</b>Adds two operands.(A + B = 30)\n
                  <b>b.</b>Subtracts second operand from the first..(A - B = 30)\n
-                <b>c.</b>Multiplies both operands.(A * B = 30)\n
+                <b>c.</b>Multiplies both operands.(A * B = 30)\n\n
                  <b>d.</b>Increment operator increases the integer value by one.(A++ = 30)\n
-        <b>3.Relational Operators</b>\n
+        <b>2.Relational Operators</b>\n
                  <b>a.</b> ==  (A + B = 30)\n
                  <b>b.</b> !=  (A != B) is true..\n
                  <b>c.</b> >  (A > B) is not true.\n
-                 <b>d.</b> >=  (A >= B) is not true.\n
+                 <b>d.</b> >=  (A >= B) is not true.\n\n
 
 
 
-        <b>4.Logical Operators</b>  \n
+        <b>3.Logical Operators</b>  \n
                  <b>a. || </b> ||  Called Logical OR Operator. If any of the two operands is non-zero, then the condition becomes true.\n
                  <b>b. !</b> ! Called Logical NOT Operator. It is used to reverse the logical state of
                                 its operand. If a condition is true, then Logical NOT operator will make it false.\n
-                 <b>c. </b> >  Called Logical AND operator. If both the operands are non-zero, then the condition becomes true.\n
+                 <b>c. </b> >  Called Logical AND operator. If both the operands are non-zero, then the condition becomes true.\n\n
 
 
 
-        <b>5. Bitwise Operators</b> \n
-        Bitwise operator works on bits and perform bit-by-bit operation. The truth tables for  |, and ^ .
+        <b>4. Bitwise Operators</b> \n
+        Bitwise operator works on bits and perform bit-by-bit operation. The truth tables for  |, and ^ .\n\n
 
 
         <b>5. Assignmet Operators</b> \n
@@ -182,7 +182,7 @@
     <string name="Functions">A function is a group of statements that together perform a task. Every C program has at least one function,
         which is main(), and all the most trivial programs can define additional functions.\n
         A function declaration tells the compiler about a function name, return type, and parameters.
-        A function definition provides the actual body of the function.
+        A function definition provides the actual body of the function.\n\n
         <b>Defining a Function</b>
         return_type function_name( parameter list ) \n
         {
@@ -192,7 +192,7 @@
         <b>Function Declarations
         </b>
         A function declaration tells the compiler about a
-        function name and how to call the function. The actual body of the function can be defined separately.\n
+        function name and how to call the function. The actual body of the function can be defined separately.\n\n
         <b>Calling a Function</b>
         While creating a C function, you give a definition of what the function has to do.
         When a program calls a function, the program control is transferred to the called function.
@@ -201,20 +201,21 @@
 
     </string>
     <string name="arrays_c">Arrays a kind of data structure that can store a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data,
-        but it is often more useful to think of an array as a collection of variables of the same type.\n
+        but it is often more useful to think of an array as a collection of variables of the same type.\n\n
         <b>Declaring Arrays</b>
         To declare an array in C, a programmer specifies the type of the elements and the number of elements required by an array as follows \n
-        type arrayName [ arraySize ];\n
+        type arrayName [ arraySize ];\n\n
         <b>Initializing Arrays</b>
         double balance[] = {1000.0, 2.0, 3.4, 7.0, 50.0};\n
-        <b>Accessing Array Elements</b>\n
+        <b>Accessing Array Elements</b>\n\n
         double salary = balance[9];\n
         The above statement will take the 10th element from the array and assign the value to salary variable.
 
     </string>
     <string name="Ponters_c">Pointers in C are easy and fun to learn. Some C programming tasks are performed more easily with pointers, and other tasks, such as dynamic memory allocation,
         cannot be performed without using pointers.
-        So it becomes necessary to learn pointers to become a perfect C programmer. Let start learning them in simple and easy steps.\n
+        So it becomes necessary to learn pointers to become a perfect C programmer.\n\n
+        <b>Let start learning them in simple and easy steps.</b>\n
             <b>What are Pointers?</b>
         A pointer is a variable whose value is the address of another variable, i.e., direct address of the memory location.
         Like any variable or constant, you must
@@ -270,7 +271,7 @@
 
     </string>
     <string name="File_c">A file represents a sequence of bytes, regardless of it being a text file or a binary file. C programming language provides access on high level functions as well
-        as low level (OS level) calls to handle file on your storage devices.\n
+        as low level (OS level) calls to handle file on your storage devices.\n\n
         <b>Opening Files</b>\n
         You can use the fopen( ) function to create a new file or to open an existing file. This call will initialize an object of the type FILE, which contains all the information necessary to control the stream. The prototype of this function call is as follows −\n
         FILE *fopen( const char * filename, const char * mode );\n
@@ -478,8 +479,8 @@ The C++ interfaces are implemented using abstract classes and these abstract cla
     <b>Ans.</b>A network is a set of devices connected to each other using a physical transmission medium.
         \n
         <b>2. What is a Node?</b>\n
-        <b>Ans. Two or more computers are connected directly by an optical fiber or any other cable. A node is a point where a connection established.
-            It is a network component which is used to send, receive and forward the electronic information.</b>\n
+        Ans. Two or more computers are connected directly by an optical fiber or any other cable. A node is a point where a connection established.
+            It is a network component which is used to send, receive and forward the electronic information.\n
         <b>3. What is Network Topology?</b>\n
         <b>Ans.</b>Network Topology is a physical layout of the computer network and it defines how the computers, devices,
         cables etc are connected to each other.\n
