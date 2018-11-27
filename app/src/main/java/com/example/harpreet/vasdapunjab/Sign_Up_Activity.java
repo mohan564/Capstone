@@ -1,6 +1,7 @@
 package com.example.harpreet.vasdapunjab;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -155,4 +156,11 @@ public class Sign_Up_Activity extends AppCompatActivity {
             }
         });
     }
+
+    public void GotoSignIn(View view) {
+
+        Intent intent = new Intent(this,First_Screen.class);
+        startActivity(intent);
+    }
 }
+

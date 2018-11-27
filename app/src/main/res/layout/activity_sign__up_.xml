@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#fff"
+    android:background="@color/colorPrimary"
     android:layout_gravity="center"
     tools:context=".Sign_Up_Activity">
 
@@ -22,6 +22,7 @@
                 android:layout_height="30dp"
                 android:layout_marginLeft="12dp"
                 android:layout_gravity="center"
+                android:onClick="GotoSignIn"
                 android:background="@color/colorPrimary"
                 android:src="@drawable/ic_arrow_back_black_24dp"/>
 
@@ -31,6 +32,7 @@
                 android:text="SIGN UP"
                 android:textColor="#fff"
                 android:textStyle="bold"
+                android:onClick="GotoSignIn"
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"/>
 
@@ -39,22 +41,34 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create your account"
-        android:textColor="@color/colorPrimary"
-        android:textSize="20dp"
-
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-
-        android:textStyle="normal"/>
+        android:text="Create your"
+        android:textColor="#ffffff"
+        android:textSize="28dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="65dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:textColor="#ffffff"
+        android:textSize="28dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="65dp"
+        android:textStyle="bold"/>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="wrap_content"
                 android:id="@+id/layoutname"
                 android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="15dp"
                 app:hintTextAppearance="@style/signUpStyle"
                 app:errorTextAppearance="@style/signUpStyle"
                 android:layout_gravity="center"
+                android:backgroundTint="#FFFFFF"
                 android:layout_height="wrap_content">
                 <EditText
                     android:textSize="17sp"
@@ -63,9 +77,9 @@
                     android:layout_gravity="center"
                     android:id="@+id/EditName"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:textColor="@color/colorPrimary"
-                    android:textColorHint="@color/colorPrimary"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
 
                     />
 
@@ -76,10 +90,12 @@
                 android:layout_width="wrap_content"
                 android:id="@+id/layoutEmail"
                 android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="15dp"
                 android:layout_marginTop="10dp"
                 app:hintTextAppearance="@style/signUpStyle"
                 app:errorTextAppearance="@style/signUpStyle"
-                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTint="#FFFFFF"
                 android:layout_height="wrap_content">
 
                 <EditText
@@ -89,17 +105,20 @@
                     android:hint="Email"
                     android:id="@+id/email"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:textColor="@color/colorPrimary"
-                    android:textColorHint="@color/colorPrimary"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
                     />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="15dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:id="@+id/layoutPassword"
+                android:backgroundTint="#FFFFFF"
                 app:errorTextAppearance="@style/signUpStyle"
                 app:hintTextAppearance="@style/signUpStyle"
                 android:layout_height="wrap_content">
@@ -111,18 +130,21 @@
                     android:hint="Password"
                     android:id="@+id/password"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:textColor="@color/colorPrimary"
-                    android:textColorHint="@color/colorPrimary"/>
+                    android:backgroundTint="#FFFFFF"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"/>
             </android.support.design.widget.TextInputLayout>
 
 
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="15dp"
                 android:id="@+id/layoutConfirmPassword"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
+                android:backgroundTint="#FFFFFF"
                 app:hintTextAppearance="@style/signUpStyle"
                 app:errorTextAppearance="@style/signUpStyle"
                 android:layout_height="wrap_content">
@@ -134,9 +156,9 @@
                     android:hint="Confirm Password"
                     android:id="@+id/confirmPassword"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:textColor="@color/colorPrimary"
-                    android:textColorHint="@color/colorPrimary"/>
+                    android:backgroundTint="#FFFFFF"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"/>
             </android.support.design.widget.TextInputLayout>
 
 
@@ -147,10 +169,10 @@
                 android:text="Sign Up"
                 android:textSize="17sp"
                 android:layout_gravity="center"
-                android:textColor="#ffff"
+                android:textColor="@color/colorPrimary"
                 android:id="@+id/signup"
                 android:onClick="signup"
-                android:background="@color/colorPrimary"
+                android:background="#FFFFFF"
                 android:layout_height="35dp" />
 
     <LinearLayout
@@ -166,15 +188,16 @@
             android:layout_gravity="center"
             android:textSize="15dp"
             android:text="Already a member? "
-            android:textColor="@color/colorPrimary" />
+            android:textColor="#FFFFFF" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign In"
             android:textSize="15dp"
-            android:textColor="@color/colorPrimary"
+            android:textColor="#FFFFFF"
             android:textStyle="bold"
+            android:onClick="GotoSignIn"
             android:id="@+id/sign_up"
             android:layout_gravity="center"/>
 
