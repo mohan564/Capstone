@@ -8,6 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:navigationBarColor">@color/colorPrimary</item>
         <item name="textColorError">#fff</item>
+        <item name="textColorPrimary">@color/colorPrimary</item>
+        <item name="textColor">#000</item>
+        <item name="backgroundColor">#fff</item>
 
 
     </style>
@@ -21,6 +24,10 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:navigationBarColor">#212121</item>
         <item name="textColorError">#fff</item>
+        <item name="textColorPrimary">#fff</item>
+        <item name="textColor">#d3d3d3</item>
+        <item name="backgroundColor">#000</item>
+
 
 
     </style>

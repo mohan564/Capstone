@@ -1,8 +1,10 @@
 package com.example.harpreet.vasdapunjab;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
@@ -207,13 +209,28 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         auth = FirebaseAuth.getInstance();
         firebaseUser = auth.getCurrentUser();
 
-        auth.signOut();
-        Intent intent = new Intent(MainActivity.this,First_Screen.class);
-        startActivity(intent);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Do you want to Sign Out").
+                setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
 
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        preferences.edit().putBoolean("Islogin",false).commit();
-        finish();
+                        auth.signOut();
+                        Intent intent = new Intent(MainActivity.this,First_Screen.class);
+                        startActivity(intent);
+                        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
+                        preferences.edit().putBoolean("Islogin",false).commit();
+                        finish();
+                    }
+                }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+
 
     }
 

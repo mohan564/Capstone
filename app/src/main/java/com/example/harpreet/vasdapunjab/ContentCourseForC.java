@@ -1,9 +1,13 @@
 package com.example.harpreet.vasdapunjab;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.ExpandableListView;
+import android.widget.Switch;
 
 import com.github.aakira.expandablelayout.ExpandableRelativeLayout;
 
@@ -13,6 +17,7 @@ import java.util.List;
 
 public class ContentCourseForC extends AppCompatActivity
 {
+    Switch my_switch;
     private ExpandableRelativeLayout introContent;
     private ExpandableRelativeLayout introContent2;
     private ExpandableRelativeLayout introContent3;
@@ -30,11 +35,12 @@ public class ContentCourseForC extends AppCompatActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
-
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_content_course_for_c);
+
     }
+
 
 
     public void showContent(View view)

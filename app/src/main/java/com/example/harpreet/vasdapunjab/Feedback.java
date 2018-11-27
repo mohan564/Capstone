@@ -22,7 +22,7 @@ public class Feedback extends Fragment {
 
         webView = (WebView) view.findViewById(R.id.webviewFeedBack);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://www.youtube.com/watch?v=TUXui5ItBkM");
+        webView.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLSckeR1ob0ogOYYGyRpkgF8vXMJWiYd8am8IFib8td9P_ks-4w/viewform?usp=sf_link");
         return view;
     }
 }
