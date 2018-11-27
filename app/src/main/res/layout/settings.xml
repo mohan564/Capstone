@@ -1,41 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_marginTop="20sp"
-        android:layout_height="wrap_content">
+        android:elevation="5dp"
 
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
         <LinearLayout
+            android:background="#ffffff"
             android:layout_width="match_parent"
             android:orientation="vertical"
-            android:padding="10sp"
             android:layout_height="match_parent">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Change Theme"
-                android:textColor="?attr/textColor"
-                android:textSize="25sp"/>
-
-            <Switch
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10sp"
-                android:id="@+id/my_switch"
-                android:textSize="20sp"
-                android:textColor="?attr/textColor"
-                android:text="Enable Dark Mode"/>
-
-
-
-        </LinearLayout>
-
+        <RatingBar
+            android:progressTint="@color/colorAccent"
+            android:layout_marginTop="22dp"
+            android:layout_width="wrap_content"
+            android:stepSize=".5"
+            android:layout_gravity="center"
+            android:id="@+id/idrating"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@color/colorSecondaryLight"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:text="Rate us"
+            android:id="@+id/id_button"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
     </android.support.v7.widget.CardView>
+
+
+
 
 
 
