@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +24,7 @@ public class Resend_Mail_Activity extends AppCompatActivity {
     String Uemail;
     int time = 2000;
     TextView textView;
+    ImageView image;
     FirebaseUser user;
     Button logout,resend_mail;
     @Override
@@ -35,13 +37,16 @@ public class Resend_Mail_Activity extends AppCompatActivity {
         Uemail = user.getEmail();
         textView = findViewById(R.id.verify);
         resend_mail = findViewById(R.id.resend_mail);
+        image = findViewById(R.id.image_verified);
         logout = findViewById(R.id.logout);
         if(!user.isEmailVerified())
         {
+            image.setImageResource(R.drawable.not_verified);
             textView.setText("Please Verify your Email To get Access to Application");
         }
         else
         {
+
             textView.setText("Welcome to our App "+Uemail);
             logout.setVisibility(View.INVISIBLE);
             resend_mail.setVisibility(View.INVISIBLE);

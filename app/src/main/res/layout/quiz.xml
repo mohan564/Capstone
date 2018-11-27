@@ -107,11 +107,13 @@
         android:id="@+id/choice4"/>
 
     <Button
-        android:layout_width="220sp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Skip this Question"
+        android:text="Skip this"
         android:layout_gravity="center"
-        android:background="#0091EA"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/rouded_red"
         android:textColor="#fff"
         android:layout_marginBottom="10dp"
         android:id="@+id/skip"/>

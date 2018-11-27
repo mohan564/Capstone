@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorPrimary"
+    android:background="#ffffff"
     android:layout_gravity="center"
     tools:context=".Sign_Up_Activity">
 
@@ -42,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Create your"
-        android:textColor="#ffffff"
+        android:textColor="@color/colorPrimary"
         android:textSize="28dp"
         android:layout_gravity="start"
         android:layout_marginTop="10dp"
@@ -52,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Account"
-        android:textColor="#ffffff"
+        android:textColor="@color/colorPrimary"
         android:textSize="28dp"
         android:layout_gravity="start"
         android:layout_marginTop="0dp"
@@ -68,7 +68,7 @@
                 app:hintTextAppearance="@style/signUpStyle"
                 app:errorTextAppearance="@style/signUpStyle"
                 android:layout_gravity="center"
-                android:backgroundTint="#FFFFFF"
+                android:backgroundTint="@color/colorPrimary"
                 android:layout_height="wrap_content">
                 <EditText
                     android:textSize="17sp"
@@ -77,9 +77,9 @@
                     android:layout_gravity="center"
                     android:id="@+id/EditName"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#FFFFFF"
-                    android:textColor="#FFFFFF"
-                    android:textColorHint="#FFFFFF"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
 
                     />
 
@@ -95,7 +95,7 @@
                 android:layout_marginTop="10dp"
                 app:hintTextAppearance="@style/signUpStyle"
                 app:errorTextAppearance="@style/signUpStyle"
-                android:backgroundTint="#FFFFFF"
+                android:backgroundTint="@color/colorPrimary"
                 android:layout_height="wrap_content">
 
                 <EditText
@@ -105,9 +105,9 @@
                     android:hint="Email"
                     android:id="@+id/email"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#FFFFFF"
-                    android:textColor="#FFFFFF"
-                    android:textColorHint="#FFFFFF"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
                     />
             </android.support.design.widget.TextInputLayout>
 
@@ -118,7 +118,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:id="@+id/layoutPassword"
-                android:backgroundTint="#FFFFFF"
+                android:backgroundTint="@color/colorPrimary"
                 app:errorTextAppearance="@style/signUpStyle"
                 app:hintTextAppearance="@style/signUpStyle"
                 android:layout_height="wrap_content">
@@ -130,9 +130,9 @@
                     android:hint="Password"
                     android:id="@+id/password"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#FFFFFF"
-                    android:textColor="#FFFFFF"
-                    android:textColorHint="#FFFFFF"/>
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"/>
             </android.support.design.widget.TextInputLayout>
 
 
@@ -144,7 +144,7 @@
                 android:id="@+id/layoutConfirmPassword"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:backgroundTint="#FFFFFF"
+                android:backgroundTint="@color/colorPrimary"
                 app:hintTextAppearance="@style/signUpStyle"
                 app:errorTextAppearance="@style/signUpStyle"
                 android:layout_height="wrap_content">
@@ -156,9 +156,9 @@
                     android:hint="Confirm Password"
                     android:id="@+id/confirmPassword"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#FFFFFF"
-                    android:textColor="#FFFFFF"
-                    android:textColorHint="#FFFFFF"/>
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"/>
             </android.support.design.widget.TextInputLayout>
 
 
@@ -169,10 +169,10 @@
                 android:text="Sign Up"
                 android:textSize="17sp"
                 android:layout_gravity="center"
-                android:textColor="@color/colorPrimary"
+                android:textColor="#FFFFFF"
                 android:id="@+id/signup"
                 android:onClick="signup"
-                android:background="#FFFFFF"
+                android:background="@color/colorPrimary"
                 android:layout_height="35dp" />
 
     <LinearLayout
@@ -188,14 +188,14 @@
             android:layout_gravity="center"
             android:textSize="15dp"
             android:text="Already a member? "
-            android:textColor="#FFFFFF" />
+            android:textColor="@color/colorPrimary" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign In"
             android:textSize="15dp"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:onClick="GotoSignIn"
             android:id="@+id/sign_up"
