@@ -301,7 +301,7 @@ public class Whats_New extends Fragment {
         File myFile = null;
 
         try {
-            myFile = File.createTempFile("images","jpg");
+            myFile = File.createTempFile("images","png");
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -330,7 +330,7 @@ public class Whats_New extends Fragment {
         File myFile2 = null;
 
         try {
-            myFile2 = File.createTempFile("images","jpg");
+            myFile2 = File.createTempFile("images","png");
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -360,7 +360,7 @@ public class Whats_New extends Fragment {
         File myFile3 = null;
 
         try {
-            myFile3 = File.createTempFile("images","jpg");
+            myFile3 = File.createTempFile("images","png");
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -389,7 +389,7 @@ public class Whats_New extends Fragment {
         File myFile4 = null;
 
         try {
-            myFile4 = File.createTempFile("images","jpg");
+            myFile4 = File.createTempFile("images","png");
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -418,7 +418,7 @@ public class Whats_New extends Fragment {
         File myFile5 = null;
 
         try {
-            myFile5 = File.createTempFile("images","jpg");
+            myFile5 = File.createTempFile("images","png");
 
         } catch (IOException e) {
             e.printStackTrace();

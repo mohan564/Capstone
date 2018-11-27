@@ -30,7 +30,20 @@
                 android:id="@+id/ayp_text"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
+                android:textStyle="bold"
                 android:text="Ask your parents text here"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:id="@+id/ayp_detail"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Ask your parents details here"
                 android:textColor="@color/colorPrimary"
                 />
 

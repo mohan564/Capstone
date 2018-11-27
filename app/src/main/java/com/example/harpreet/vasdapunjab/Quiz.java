@@ -26,7 +26,7 @@ public class Quiz extends Fragment {
 
     TextView mScore,mQuestion;
     Button mChoice1,mChoice2,mChoice3,mChoice4,skip;
-    int Score;
+    public static int Score;
     String mAnswer;
     int mQuestionNumber;
     FirebaseDatabase database;
@@ -59,6 +59,7 @@ public class Quiz extends Fragment {
             public void onClick(View view) {
                 if(mChoice1.getText().equals(mAnswer))
                 {
+                    
                     mQuestionNumber++;
                     Score = Score +1;
                     if(Score<=20)

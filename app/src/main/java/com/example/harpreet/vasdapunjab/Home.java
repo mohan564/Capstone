@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -130,6 +131,7 @@ public class Home extends Fragment
     ImageView image_home_1,image_home_2,image_home_3,image_home_4,image_home_5;
     FirebaseStorage storage;
     StorageReference reference;
+    TextView score;
 
 
     @Nullable
@@ -154,12 +156,12 @@ public class Home extends Fragment
 
         //1st image home ch fetch karn layi code
 
-        StorageReference pathreference = reference.child("home_1.jpg");
+        StorageReference pathreference = reference.child("home_1.png");
 
         File myFile1 = null;
 
         try {
-            myFile1 = File.createTempFile("images","jpg");
+            myFile1 = File.createTempFile("images","png");
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -181,12 +183,12 @@ public class Home extends Fragment
         });
 
         //2nd home image fetch karn layi code
-        StorageReference pathreference2 = reference.child("home_2.jpg");
+        StorageReference pathreference2 = reference.child("home_2.png");
 
         File myFile2 = null;
 
         try {
-            myFile2 = File.createTempFile("images","jpg");
+            myFile2 = File.createTempFile("images","png");
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -212,7 +214,7 @@ public class Home extends Fragment
 
         File myFile3 = null;
         try {
-            myFile3 = File.createTempFile("images","jpg");
+            myFile3 = File.createTempFile("images","png");
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -233,11 +235,11 @@ public class Home extends Fragment
         });
 
         //4th home image fetch karn layi code
-        StorageReference pathreference4 = reference.child("home_4.jpg");
+        StorageReference pathreference4 = reference.child("home_4.png");
 
         File myFile4 = null;
         try {
-            myFile4 = File.createTempFile("images","jpg");
+            myFile4 = File.createTempFile("images","png");
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -258,30 +260,6 @@ public class Home extends Fragment
         });
 
 
-        //5th home image stech karn layi code
-        StorageReference pathreference5 = reference.child("home_5.png");
-
-        File myFile5 = null;
-        try {
-            myFile5 = File.createTempFile("images","jpg");
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        final File MyFile5 = myFile5;
-        pathreference5.getFile(myFile5).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-                Bitmap bitmap5 = BitmapFactory.decodeFile(MyFile5.getAbsolutePath());
-                image_home_5.setImageBitmap(bitmap5);
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(getActivity(), "Image 5 not fetched", Toast.LENGTH_SHORT).show();
-            }
-        });
 
 
     }
@@ -292,12 +270,14 @@ public class Home extends Fragment
         image_home_2 = view.findViewById(R.id.image_home_2);
         image_home_3 = view.findViewById(R.id.image_home_3);
         image_home_4 = view.findViewById(R.id.image_home_4);
-        image_home_5 = view.findViewById(R.id.image_home_5);
 
 
+        score = view.findViewById(R.id.score_main);
+
+        int score_main = Quiz.Score;
+
+        score.setText(""+score_main) ;
        // Glide.with(getActivity()).load(R.raw.loading).into(image_home_1);
-
-
 
 
 

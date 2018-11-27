@@ -31,11 +31,11 @@ import java.io.IOException;
 public class Ask_Your_Parents extends Fragment {
 
     FirebaseDatabase database;
-    DatabaseReference databaseReference;
+    DatabaseReference databaseReference,databaseReference2;
     FirebaseStorage storage;
     StorageReference storageReference;
     ImageView imageView;
-    TextView textView;
+    TextView textView,textView_details;
     ProgressDialog dialog;
 
     @Nullable
@@ -57,12 +57,26 @@ public class Ask_Your_Parents extends Fragment {
 
         database = FirebaseDatabase.getInstance();
         databaseReference = database.getReference("ayp");
+        databaseReference2 = database.getReference("ayp_detail");
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 String value = dataSnapshot.getValue().toString();
                 textView.setText(value);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+        databaseReference2.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                String value = dataSnapshot.getValue().toString();
+                textView_details.setText(value);
             }
 
             @Override
@@ -77,6 +91,7 @@ public class Ask_Your_Parents extends Fragment {
 
         textView = view.findViewById(R.id.ayp_text);
         imageView = view.findViewById(R.id.image_ayp);
+        textView_details = view.findViewById(R.id.ayp_detail);
         dialog = new ProgressDialog(getActivity());
         dialog.setTitle("Please Wait");
         dialog.setMessage("Data is being Loaded");
@@ -93,7 +108,7 @@ public class Ask_Your_Parents extends Fragment {
         File myFile = null;
 
         try {
-            myFile = File.createTempFile("images","jpg");
+            myFile = File.createTempFile("images","png");
 
         } catch (IOException e) {
             e.printStackTrace();

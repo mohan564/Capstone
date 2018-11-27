@@ -54,14 +54,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.navigation_drawer);
+
+
         FirebaseApp.initializeApp(this);
         resend_mail = findViewById(R.id.resend_mail);
         auth = FirebaseAuth.getInstance();
         firebaseUser = auth.getCurrentUser();
-        //email da naam fetch karna
-        //name_navigation = findViewById(R.id.name_navigation);
-        Uemail = firebaseUser.getEmail().toString();
-        //name_navigation.setText(Uemail);
+
 
 
         //tool bar di coding
@@ -72,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         /// Bottom navigation Bar di coding
 
        frameLayout = findViewById(R.id.frameLayout);
-        bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation_view);
+       bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation_view);
 
         android.app.FragmentTransaction ft = getFragmentManager().beginTransaction();
         ft.add(R.id.frameLayout,new Home());
@@ -127,6 +126,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        //email da naam fetch karna
+        name_navigation = navigationView.getHeaderView(0).findViewById(R.id.email_navigation);
+        Uemail = firebaseUser.getEmail().toString();
+        name_navigation.setText(Uemail);
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open_drawer, R.string.close_drawer);
         drawerLayout.setDrawerListener(toggle);
         toggle.syncState();
@@ -159,10 +163,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         else if (id==R.id.aboutUs_id)
         {
             fragment = new About_us();
-        }
-        else if(id==R.id.myStatus_id)
-        {
-            Toast.makeText(MainActivity.this, "Yet to create", Toast.LENGTH_SHORT).show();
         }
          else if(id==R.id.logout_id)
              {
