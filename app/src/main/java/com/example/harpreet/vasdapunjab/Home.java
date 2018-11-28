@@ -33,7 +33,9 @@ import java.util.TimerTask;
 
 import me.relex.circleindicator.CircleIndicator;
 
-public class Home extends Fragment  {
+public class Home extends Fragment
+{
+    Quiz quiz;
 
   /*  ViewPager viewPager;
     PagerAdapter adapter;
